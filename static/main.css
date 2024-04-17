@@ -81,6 +81,7 @@
 .ingredient-image-container {
     height: 100px; /* Fixed height to contain images */
     display: flex; /* Use flex to center the image vertically and horizontally */
+    position: relative;
    
 }
 
@@ -125,6 +126,28 @@
     background-color: #314D1C;
 }
 
-#move-to-ingredients {
+#move-to-ingred-quiz {
     display: inline-block; /* This makes the button an inline-level block container */
+}
+
+.ingredient-tooltip {
+    display: none; /* Initially hide the tooltip */
+    position: absolute; /* Position relative to the ingredient-item */
+    bottom: 100%; /* Place it above the image container */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Align the center of the tooltip with the center of the image */
+    background-color: #314D1C; /* Match the button color for consistency */
+    color: white; /* Text color for the tooltip */
+    padding: 8px 12px; /* Some padding around the text */
+    border-radius: 6px; /* Rounded corners for the tooltip */
+    text-align: center; /* Center the text inside the tooltip */
+    font-size: 0.8em; /* A smaller font size for the tooltip */
+    z-index: 10; /* Ensure it sits above other content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* A subtle shadow for some depth */
+}
+
+/* Show the tooltip on hover */
+.ingredient-item:hover .ingredient-tooltip {
+    display: block; /* Show the tooltip */
 }
