@@ -50,3 +50,81 @@
     color: white;
     background-color: #314D1C;
 }
+
+#ingredient-title{
+    margin-top: 30px;
+    color:#284e13;
+    font-family: 'Yeseva One', serif;
+    margin-bottom: 50px;
+}
+#ingredient-subtext{
+    font-weight: 100;
+    font-family: 'Yeseva One', serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#ingredients-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ingredient-item {
+    display: inline-block; /* Aligns items side by side */
+    width: 120px; /* Fixed width for all items */
+    vertical-align: top; /* Aligns items at the top */
+    margin: 0 10px; /* Margin between items */
+    position: relative; /* Positioning context for the text */
+}
+
+.ingredient-image-container {
+    height: 100px; /* Fixed height to contain images */
+    display: flex; /* Use flex to center the image vertically and horizontally */
+   
+}
+
+.ingredient-image {
+    width: 100%; /* This will make the image fill the container */
+    height: auto; /* This will maintain the aspect ratio */
+    object-fit: contain; /* This will prevent images from being stretched */
+    margin-bottom: 8px;
+    max-height: 100px; /* This will constrain the height of taller images */
+}
+
+.ingredient-name {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 16px; /* Adds space below the name for consistent alignment */
+}
+
+.hover-text {
+    font-size: 1em; /* Adjust the size as needed */
+    margin-top: 20px; /* Space above the text */
+    margin-bottom: 5px; /* Space below the text before the button */
+    color: #365923; /* Text color - change as needed */
+    text-align: center;
+}
+
+.btn-custom {
+    background-color: #DCE9D5;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    font-family: 'Montserrat', serif;
+    color: #314D1C;
+    text-align: center;
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: #314D1C;
+}
+
+#move-to-ingredients {
+    display: inline-block; /* This makes the button an inline-level block container */
+}

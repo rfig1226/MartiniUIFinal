@@ -1,47 +1,49 @@
-function fetchIngredientData(recipe_id) {
-  let id_send = { item_id: recipe_id };
-  console.log("fetching ingred");
-  $.ajax({
-    type: "POST",
-    url: "/load_recipe",
-    contentType: "application/json",
-    data: JSON.stringify(id_send),
-    success: function (response) {
-      // Update page content with the fetched data
-      var ingredients = response.data.ingredients;
+$(document).ready(function(){
+    // Get the recipe_id from the URL
 
-      let title = "Ingredients for " + response.data["recipe_name"];
-      $("#ingred-title").append(title);
+    console.log("recipe id: " + recipe_id);
 
-      addIngredients(ingredients);
-    },
-    error: function (xhr, status, error) {
-      console.error("Error fetching recipe data:", error);
-    },
-  });
-}
+    // Function to fetch recipe data and update page content
+    function fetchRecipeData(recipe_id) {
+        $.ajax({
+            type: "POST",
+            url: "/load_recipe",
+            contentType: "application/json",
+            data: JSON.stringify({ item_id: recipe_id }),
+            dataType: "json", // Ensure you're expecting a JSON response
+            success: function(response) {
+                // Update page content with the fetched data
+                var recipeData = response.data;
+                $("#ingredient-title").text("How to Make a " + recipeData.recipe_name);
+                $("#ingredient-subtext").text("You will need:");
 
-function addIngredients(ingredients) {
-  for (let ingredient in ingredients) {
-    let ingredientlist = $(`<div class="row ingredient-list-item">
-                <div class="col-md-6">
-                    ${ingredient}
-                <div>
-                <div class="col-md-6">
-                    ${ingredients[ingredient]}
-                <div>
-            </div>
-        `);
+                // Clear existing ingredients
+                $("#ingredients-list").empty();
 
-    $(".ingred-list").append(ingredientlist);
-  }
-}
+                // Add ingredients to the list
+                $.each(recipeData.ingredients, function(key, value) {
+                    let ingredientElement = $('<div class="ingredient-item"></div>');
+                    let imageContainer = $('<div class="ingredient-image-container"></div>');
+                    let image = $('<img class="ingredient-image">').attr('src', value.image).attr('alt', key);
+                    let name = $('<p class="ingredient-name"></p>').text(key);
 
-$(document).ready(function () {
-  fetchIngredientData(recipe_id);
+                    imageContainer.append(image);
+                    ingredientElement.append(imageContainer).append(name);
+                    $('#ingredients-list').append(ingredientElement);
+                });
+            },
+            error: function(xhr, status, error) {
+                console.error("Error fetching recipe data:", error);
+            }
+        });
+    }
 
-  // Redirect to ingredients quiz
-  $("#move-to-ingred-quiz").click(function () {
-    window.location.href = "/ingredients_quiz/" + recipe_id;
-  });
+    // Call the function to fetch recipe data when the page loads
+    fetchRecipeData(recipe_id);
+
+    // Redirect to ingredients page when the button is clicked
+    $("#move-to-ingred-quiz").click(function () {
+        window.location.href = "/ingredients_quiz/" + recipe_id;
+      });
 });
+

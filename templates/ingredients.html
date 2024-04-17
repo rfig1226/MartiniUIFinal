@@ -1,20 +1,21 @@
-{% extends "layout.html" %} {% block content %}
+{% extends "layout.html" %}
+{% block content %}
 
-<script
-  type="text/javascript"
-  src="{{ url_for('static', filename = 'ingredients.js') }}"
-></script>
-
+<script type="text/javascript" src="{{ url_for('static', filename = 'ingredients.js') }}"></script>
 <script>
-  let recipe_id = {{recipe_id|tojson}}
+    let recipe_id = {{recipe_id|tojson}};
 </script>
 
-<div class="container">
-  <div id="ingred-title" class="main-text main-text-padding"></div>
-  <div class="col-md-9 ingred-list"></div>
-  <button class="button button-text" id="move-to-ingred-quiz">
-    Test Your Knowledge!
-  </button>
+<div class="container ">
+    <h1 id="ingredient-title">How to Make a Lemon Drop Martini</h1>
+    <p id="ingredient-subtext">You will need:</p>
+    <div id="ingredients-list" class="d-flex justify-content-center align-items-start flex-wrap">
+      <!-- Ingredient items will be dynamically populated here -->
+  </div>
+    <i><p class="hover-text">Hover over each item for more information</p></i>
+    <div class="d-flex justify-content-center">
+    <button class="btn btn-custom mt-4" id="move-to-ingred-quiz">See Full Ingredients List</button>
+  </div>
 </div>
 
 {% endblock %}
