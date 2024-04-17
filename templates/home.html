@@ -1,0 +1,9 @@
+{% extends "layout.html" %} {% block content %}
+<script
+  type="text/javascript"
+  src="{{ url_for('static', filename = 'home.js') }}"
+></script>
+
+<script>
+  let lessons = {{lessons|tojson}}
+</script>
