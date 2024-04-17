@@ -1,0 +1,37 @@
+
+.navbar-color{
+    background-color: #DBE8D4;
+}
+
+.main-text{
+    font-family: 'Yeseva One', serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #314D1C;
+}
+
+.main-text-padding{
+    padding: 20px;
+}
+
+.reg-text{
+    font-family: 'Montserrat', serif;
+    font-size: 22px;
+    color: black;
+}
+
+.reg-text.padding {
+    padding: 40px;
+}
+
+.button{
+    background-color: #314D1C;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.button-text{
+    font-family: 'Montserrat', serif;
+    font-size: 17px;
+    color: white;
+}

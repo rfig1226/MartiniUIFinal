@@ -43,12 +43,31 @@
       href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
       rel="stylesheet"
     />
+      <link href='https://fonts.googleapis.com/css?family=Yeseva One' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
     <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" />
 
-    <title>Martini Website Title TBD</title>
+      <title> How to Make a Martini </title>
+
   </head>
   <body>
+      <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+          <div class="container">
+              <a class="navbar-brand main-text" href="/" > Martini Website Title TBD </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <!-- Need href for where we want these to take the user -->
+                      <a class="nav-link reg-text" href="start.html"> Learn </a>
+                      <a class="nav-link reg-text" > More Recipes </a>
+                      <a class="nav-link reg-text" > Quiz </a>
+                  </div>
+              </div>
+          </div>
+      </nav>
     <div class="container-fluid">{% block content %} {% endblock %}</div>
   </body>
 </html>
