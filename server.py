@@ -9,6 +9,7 @@ app = Flask(__name__)
 # contains all lesson and quiz data, load up for routing
 file_path = "lesson_data.json"
 
+
 with open(file_path, "r") as file:
     # all lesson data in one variable
     lessons = json.load(file)
@@ -21,10 +22,14 @@ with open(file_path, "r") as file:
 def welcome():
     return render_template("home.html", lessons=lessons)
 
+@app.route("/start")
+def start():
+    return render_template("start.html", lessons=lessons)
+
 
 @app.route("/start/<recipe_id>")
 def start_lesson(recipe_id):
-    return render_template("start.html", recipe_id=recipe_id)
+    return render_template("start_lesson.html", recipe_id=recipe_id)
 
 
 @app.route("/ingredients/<recipe_id>")

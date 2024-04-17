@@ -1,0 +1,22 @@
+{% extends "layout.html" %} {% block content %}
+
+    <script
+            type="text/javascript"
+            src="{{ url_for('static', filename = 'start_lesson.js') }}"
+    ></script>
+
+    <script>
+        let recipe_id = {{recipe_id|tojson}}
+    </script>
+
+    <body>
+        <div class="container">
+            <h1 class="main-text-padding" id="lesson-title"></h1>
+            <p class="reg-text" id="lesson-description"></p>
+            <img src="" alt="Lesson Image" id="lesson-image">
+            <br>
+            <button class="button button-text" id="move-to-ingredients">Move to Ingredients</button>
+        </div>
+    </body>
+
+{% endblock %}

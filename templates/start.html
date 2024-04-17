@@ -5,7 +5,35 @@
   src="{{ url_for('static', filename = 'start.js') }}"
 ></script>
 
-<script>
-  let recipe_id = {{recipe_id|tojson}}
-</script>
+    <script>
+        let lessons = {{ lessons|tojson|safe }};
+    </script>
+
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="main-text main-text-padding">
+                    Choose your flavor profile
+                </div>
+                <div class="reg-text padding">
+                    Martinis come in many different styles and flavors! Learn more about different martini recipes with unique flavor profiles. There is a martini recipe for whatever flavor or taste you are craving!
+                </div>
+                <div class="reg-text padding">
+                    We recommend beginning with learning the classic martini and then exploring other martini recipes with flavor profiles different from the classic martini.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="button-container">
+                    <button class="flavor-button btn-block mb-2" data-flavor="Classic">Classic</button>
+                    <button class="flavor-button btn-block mb-2" data-flavor="Sweet">Sweet</button>
+                    <button class="flavor-button btn-block mb-2" data-flavor="Sour">Sour</button>
+                    <button class="flavor-button btn-block mb-2" data-flavor="Bitter">Bitter</button>
+                    <button class="flavor-button btn-block mb-2" data-flavor="Creamy">Creamy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
 {% endblock %}

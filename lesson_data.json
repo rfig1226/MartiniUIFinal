@@ -2,9 +2,14 @@
   "0": {
     "id": "0",
     "flavor_profile": "sweet",
+    "description": "There are endless margarita recipes with a spicy flavor profile. To become familiar with crafting recipes and ordering margaritas in the spicy taste group, we will be learning how to make a Lemon Drop Martini. Since most martinis have the same steps, you can also skip straight to the stand-alone recipe for the Lemon Drop Martini.\n",
+    "image": "https://i0.wp.com/www.imbored-letsgo.com/wp-content/uploads/2013/07/Lemon-Drop-Martini_.jpg?ssl=1",
+    "recipe_name": "Lemon Drop Martini",
     "ingredients": {
       "lemon juice": "2 oz",
-      "vodka": "1.5 oz"
+      "vodka": "1.5 oz",
+      "triple sec": ".5 oz",
+      "sugar": "1 tsp"
     }
   },
   "1": {

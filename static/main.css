@@ -35,3 +35,18 @@
     font-size: 17px;
     color: white;
 }
+
+.flavor-button{
+    background-color: #DCE9D5;
+    border-radius: 10px;
+    padding: 10px;
+
+    font-size: 17px;
+    font-family: 'Montserrat', serif;
+    color: #314D1C;
+}
+
+.flavor-button:hover{
+    color: white;
+    background-color: #314D1C;
+}
