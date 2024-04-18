@@ -9,34 +9,41 @@
       "lemon juice": {
         "info": "It would not be a lemon drop martini without lemon juice! Any will work for this recipe!",
         "amount": "2 oz",
-        "image": "https://www.bganfoods.com/wp-content/uploads/2018/06/lemon-juice-4.png"
+        "image": "https://www.bganfoods.com/wp-content/uploads/2018/06/lemon-juice-4.png",
+        "type": "ingredient"
       },
       "vodka": {
         "amount": "1.5 oz",
         "info": "Vodka is the key ingredient! Any vodka will work for this recipe!",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s",
+        "type": "ingredient"
       },
       "sugar": {
         "info": "Add some sweetness into your drink!",
         "amount": "1 tsp",
-        "image": "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+        "image": "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750",
+        "type": "ingredient"
       },
       "lemon slice": {
         "info": "For a garnish to top it off, don't forget a thin slice of lemon!",
-        "image": "data:image/jpeg;base64,..."
+        "image": "data:image/jpeg;base64,...",
+        "type": "ingredient"
       },
       "cocktail shaker": {
         "image": "https://img.fruugo.com/product/4/60/631394604_max.jpg",
-        "info": "Martinis must be shaken! Any kind of cocktail shaker will work for this drink."
+        "info": "Martinis must be shaken! Any kind of cocktail shaker will work for this drink.",
+        "type": "equipment"
       },
       "triple sec": {
         "amount": ".5 oz",
         "info": "Any kind of Triple Sec or Orange Liqueur will work! We recommend using Cointreau.",
-        "image": "https://www.dekuyperusa.com/sites/default/files/2020-02/11128_DK_Website_329x834_DK_TripleSec_0.png"
+        "image": "https://www.dekuyperusa.com/sites/default/files/2020-02/11128_DK_Website_329x834_DK_TripleSec_0.png",
+        "type": "ingredient"
       },
       "ice": {
         "info": "For shaking the drink and for putting in the final drink! Don’t forget the ice!",
-        "image": "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png"
+        "image": "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+        "type": "ingredient"
       }
     },
     "steps": {
@@ -64,11 +71,13 @@
     "ingredients": {
       "lemon juice": {
         "amount": "2 oz",
-        "image": "https://example.com/lemon-juice.jpg"
+        "image": "https://example.com/lemon-juice.jpg",
+        "type": "ingredient"
       },
       "vodka": {
         "amount": "1.5 oz",
-        "image": "https://example.com/vodka.jpg"
+        "image": "https://example.com/vodka.jpg",
+        "type": "ingredient"
       }
     }
   }

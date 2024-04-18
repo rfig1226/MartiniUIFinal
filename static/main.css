@@ -207,4 +207,30 @@ button:disabled {
     background-color: #DCE9D5; /* Change to desired color */
 }
 
+.simulation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.left-side {
+    width: 40%;
+}
+
+.right-side {
+    width: 40%;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    min-height: 300px; /* Adjust height as needed */
+}
+
+.draggable-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
   
