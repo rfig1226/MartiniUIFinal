@@ -48,7 +48,7 @@ def recipe(recipe_id):
     return render_template("recipe.html", recipe_id=recipe_id)
 
 
-@app.route("/recipe_quiz/<item_id>")
+@app.route("/recipe_quiz/<recipe_id>")
 def recipe_quiz(recipe_id):
     return render_template("recipe_quiz.html", recipe_id=recipe_id)
 

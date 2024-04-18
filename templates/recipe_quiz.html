@@ -8,4 +8,14 @@
 <script>
   let recipe_id = {{recipe_id|tojson}}
 </script>
+
+<div class="container">
+    <h2 class="main-text">Arrange the steps in the correct order:</h2>
+    <ul class="sortable reg-text" id="steps-list">
+        <!-- Steps will be dynamically inserted here -->
+    </ul>
+    <button class="btn-custom" id="check-answers">Check Answers</button>
+    <div class="main-text" id="result"></div>
+    <button class="button" id="reset" style="display: none;">Reset</button> <!-- Initially hidden -->
+</div>
 {% endblock %}
