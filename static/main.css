@@ -151,3 +151,29 @@
 .ingredient-item:hover .ingredient-tooltip {
     display: block; /* Show the tooltip */
 }
+
+.drag-measurement {
+    background-color: #DCE9D5;
+    margin: 7px;
+    padding: 10px;
+}
+
+.drop-ingredient {
+    background-color: #DCE9D5;
+    margin: 7px;
+    padding: 10px;
+}
+
+.ing-quiz-results {
+    margin: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+button:disabled {
+    background-color: #cccccc; /* Gray background to indicate it's disabled */
+    color: #666666; /* Darker text color for better contrast */
+    cursor: not-allowed; /* Cursor indicates that the button is not clickable */
+    border: 1px solid #999999; /* Optional: change the border color */
+  }
+  

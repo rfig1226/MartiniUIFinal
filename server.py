@@ -22,6 +22,7 @@ with open(file_path, "r") as file:
 def welcome():
     return render_template("home.html", lessons=lessons)
 
+
 @app.route("/start")
 def start():
     return render_template("start.html", lessons=lessons)
@@ -44,12 +45,12 @@ def ingredients_quiz(recipe_id):
 
 @app.route("/recipe/<recipe_id>")
 def recipe(recipe_id):
-    return render_template("ingredients.html", recipe_id=recipe_id)
+    return render_template("recipe.html", recipe_id=recipe_id)
 
 
 @app.route("/recipe_quiz/<item_id>")
 def recipe_quiz(recipe_id):
-    return render_template("ingredients_quiz.html", recipe_id=recipe_id)
+    return render_template("recipe_quiz.html", recipe_id=recipe_id)
 
 
 # AJAX FUNCTIONS
