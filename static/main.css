@@ -233,4 +233,13 @@ button:disabled {
 }
 
 
+.step-item {
+    display: none; /* Hide all steps by default */
+}
+
+.step-item.active {
+    display: block; /* Only display the active step */
+}
+
+
   

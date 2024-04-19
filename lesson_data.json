@@ -49,19 +49,32 @@
     "steps": {
       "step1": {
         "step_title": "Step 1: Chill Martini Glasses",
-        "step_details": "1. Chill martini glasses in freezer for at least 10 minutes prior to serving."
+        "step_details": [
+          "Chill martini glasses in freezer for at least 10 minutes prior to serving."
+        ]
       },
       "step2": {
         "step_title": "Step 2: Mix Ingredients",
-        "step_details": "1. Fill your shaker ½ of the way with ice.\n2. Pour the vodka, triple sec, lemon juice and sugar into the cocktail shaker.\n3. Close the shaker either with a lid or smaller tin."
+        "step_details": [
+          "Fill your shaker ½ of the way with ice.",
+          "Pour the vodka, triple sec, lemon juice and sugar into the cocktail shaker.",
+          "Close the shaker either with a lid or smaller tin."
+        ]
       },
       "step3": {
         "step_title": "Step 3: Shake!",
-        "step_details": "1. Firmly grip the shaker with both hands – one hand on the top and one hand on the bottom.\n2. Shake in a circular motion until the shaker produces condensation.\n3. Separate the two units once done."
+        "step_details": [
+          "Firmly grip the shaker with both hands – one hand on the top and one hand on the bottom.",
+          "Shake in a circular motion until the shaker produces condensation.",
+          "Separate the two shaking units once done."
+        ]
       },
       "step4": {
         "step_title": "Step 4: Serve",
-        "step_details": "1. Run the lemon twist around the edge of the chilled martini glass and dunk in a small amount of sugar for a coated rim.\n2. Strain the martini and pour into the glass (might require extra strainer tool if using a Boston shaker)."
+        "step_details": [
+          "Run the lemon twist around the edge of the chilled martini glass and dunk in a small amount of sugar for a coated rim.",
+          "Strain the martini and pour into the glass (might require extra strainer tool if using a Boston shaker)."
+        ]
       }
     }
   },
