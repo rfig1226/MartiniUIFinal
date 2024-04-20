@@ -242,4 +242,63 @@ button:disabled {
 }
 
 
-  
+.recipe-header {
+    padding: 20px;
+    font-family: 'Yeseva One', serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #314D1C;
+}
+
+.step-title {
+    font-family: 'Montserrat', serif;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sub-step-item {
+    margin-bottom: 15px;
+}
+
+.sub-step-description {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    color: black;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    max-width: 95%;
+}
+
+.sub-step-num {
+    font-size: 22px;
+    color: #314D1C;
+    font-family: 'Yeseva One', serif;
+    margin-right: 7px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.fixed-bottom {
+    position: fixed; /* Fix to the bottom */
+    bottom: 20px;      /* Position it at the bottom of the page */
+    left: 0;        /* Stretch across the page */
+    width: 100%;    /* Ensure it spans the width of the viewport */
+    background: #FFF; /* Set a background color if needed */
+}
+
+.step-video-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+}
+
+.step-video {
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+}

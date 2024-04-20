@@ -10,9 +10,25 @@
 </script>
 
 <div class="container">
-  <div class="row recipe-header"></div>
-  <div class="recipe-steps"></div>
-  <button id="prev-step-btn">Previous Step</button>
-  <button id="next-step-btn">Next Step</button>
+  <div class="recipe-container">
+    <div class="row recipe-header"></div>
+    <div class="row justify-content-center">
+      <div class="col-md-8 recipe-steps"></div>
+    </div>
+  </div>
+
+  <div class="fixed-bottom bg-white">
+    <div class="container">
+      <div class="row toggle-steps-container justify-content-center">
+        <button id="prev-step-btn" class="btn btn-outline-secondary m-2">
+          Previous Step
+        </button>
+        <button id="next-step-btn" class="btn btn-primary m-2">
+          Next Step
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="go-recipe-quiz-container"></div>
 </div>
 {% endblock %}
