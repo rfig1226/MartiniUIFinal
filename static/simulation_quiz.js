@@ -1,6 +1,8 @@
 // Global variable to store the answer key
 let answerKey = {};
-let selectedChoices = {};
+let correctChoicesCount = 0;
+let incorrectChoicesCount = 0;
+
 
 // Function to load the answer key from the server
 function loadAnswerKey(recipe_id) {
@@ -78,67 +80,58 @@ function loadStep(stepIndex) {
 
 // Function to check selected choices against the answers
 function checkAnswers(stepIndex) {
-    let step = answerKey.steps["step" + stepIndex];
-    let selected = $(".selected").map(function() {
+    let selectedChoices = $(".selected").map(function() {
         return $(this).attr("src");
     }).get();
+    let correctAnswersStep = answerKey.steps["step" + stepIndex].answers;
 
-    // Store selected choices for this step
-    selectedChoices["step" + stepIndex] = selected;
+    // Reset counts for this step
+    let stepCorrectChoices = 0;
+    let stepIncorrectChoices = 0;
 
     // Remove outlines from all choices
     $(".choice-image").css("outline", "");
 
     // Compare selected choices with correct answers for this step
-    $(".choice-image").each(function() {
-        let choice = $(this).attr("src");
-        if (selected.includes(choice)) {
-            // Selected choice
-            if (step.answers.includes(choice)) {
-                // Correct choice
-                $(this).css("outline", "5px solid #374C23");
-            } else {
-                // Incorrect choice
-                $(this).css("outline", "5px solid red");
-            }
+    selectedChoices.forEach(function(selectedChoice) {
+        if (correctAnswersStep.includes(selectedChoice)) {
+            // Correct choice
+            stepCorrectChoices++;
+            $(`.choice-image[src="${selectedChoice}"]`).css("outline", "5px solid #374C23");
+        } else {
+            // Incorrect choice
+            stepIncorrectChoices++;
+            $(`.choice-image[src="${selectedChoice}"]`).css("outline", "5px solid red");
         }
     });
+
+    // Increment global counters
+    correctChoicesCount += stepCorrectChoices;
+    incorrectChoicesCount += stepIncorrectChoices;
+
+    console.log("correct answers: " + stepCorrectChoices);
+    console.log("incorrect answers: " + stepIncorrectChoices);
 }
+
+
 
 
 // Function to calculate the user's score
 function calculateResults() {
-    let totalQuestions = 0;
-    let correctAnswers = 0;
+    let totalQuestions = 0; // Total number of correct and incorrect choices
 
-    // Iterate through each step in the answer key
-    $.each(answerKey.steps, function(stepName, step) {
-        totalQuestions += step.choices.length;
-
-        // Get the selected choices for this step
-        let selectedAnswers = selectedChoices[stepName];
-
-        // Compare selected choices with correct answers
-        $.each(selectedAnswers, function(_, selectedChoice) {
-            if (step.answers.includes(selectedChoice)) {
-                correctAnswers++;
-            } else {
-                correctAnswers -= 0.5; // Deduct 0.5 for each incorrect choice
-            }
-        });
+    // Iterate through each step in the answer key to get total questions
+    $.each(answerKey.steps, function(_, step) {
+        totalQuestions += step.answers.length;
     });
 
-    console.log("Correct Choices: " + correctChoices);
-    console.log("Total Choices: " + totalQuestions);
+    console.log("Overall: " + correctChoicesCount + " " + incorrectChoicesCount);
+    let overallScore = correctChoicesCount - (incorrectChoicesCount * .5)
 
-    // Calculate the percentage score
-    let score = (correctAnswers / totalQuestions) * 100;
+    // Calculate the score
+    let score = (overallScore / totalQuestions) * 100;
     return score.toFixed(2);
 }
-
-
-
-
 
 
 // Function to show results
