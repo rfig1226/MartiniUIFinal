@@ -11,21 +11,32 @@
 
 <div class="container">
   <div id="ingred-quiz-title" class="main-text main-text-padding">
-    Quiz Time!
+    Ingredient Quiz Time!
   </div>
-  <div class="row quiz-question">
-    Enter the measurements for each ingredient below. Click the submit button
-    when done.
+  <div class="row reg-text ing-quiz-question">
+    Drag the measurements to their respective ingredient below. Click the submit
+    button when done.
   </div>
+
   <div class="row test-ingred">
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
     <div class="col-md-2 measurements"></div>
     <div class="col-md-2"></div>
     <div class="col-md-2 ingredient-target"></div>
-  </div>
-  <div class="ing-quiz-footer">
-    <button class="button button-text" id="submit-quiz" disabled>Submit</button>
-    <div class="ing-quiz-results"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-4 d-flex flex-column align-items-center">
+      <div class="row ing-quiz-btn-container">
+        <div class="col">
+          <button class="btn-custom" id="reset-ing-quiz-btn">Reset</button>
+        </div>
+      </div>
+      <div class="row ing-quiz-btn-container-1">
+        <div class="col">
+          <button class="btn-custom" id="submit-quiz" disabled>Submit</button>
+        </div>
+      </div>
+      <div class="row ing-quiz-results"></div>
+    </div>
   </div>
 </div>
 

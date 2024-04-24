@@ -48,6 +48,13 @@ $(document).ready(function () {
 
     $(".drag-measurement").draggable({
       revert: "invalid",
+      start: function (event, ui) {
+        // Changes the color when the drag starts
+        $(this).css({
+          "background-color": "#284e13", // Example: a light green color
+          color: "white",
+        });
+      },
     });
 
     $(".drop-ingredient").droppable({
@@ -97,13 +104,41 @@ $(document).ready(function () {
     });
   }
 
+  function resetQuiz() {
+    // Reset the draggable elements to their original container and style
+    $(".drag-measurement").each(function () {
+      $(this)
+        .appendTo(".measurements") // Assuming ".measurements" is their original container
+        .css({
+          "background-color": "#DCE9D5",
+          color: "#284e13",
+          width: "", // Reset width, if changed
+          height: "", // Reset height, if changed
+          top: "", // Reset top position, if changed
+          left: "", // Reset left position, if changed
+        })
+        .removeClass("dropped")
+        .draggable("enable");
+    });
+
+    // reset any counters or results displayed
+    $(".ing-quiz-results").empty();
+    matchCount = 0;
+    totalCount = 0;
+    $("#submit-quiz").prop("disabled", true);
+  }
+
+  $("#reset-ing-quiz-btn").click(resetQuiz);
+
   // Redirect to ingredients page when the button is clicked
   $("#submit-quiz").click(function () {
     $(".ing-quiz-results").text("Results: " + matchCount + "/" + totalCount);
     let goRecipeButton = $(
-      "<button class='button button-text' id='go-recipe-button'>Learn Recipe</button>"
+      "<button class='btn-custom' id='go-recipe-button'>Learn Recipe</button>"
     );
-    $(".ing-quiz-footer").append(goRecipeButton);
+    $(".ing-quiz-btn-container").append(goRecipeButton);
+    $(this).hide();
+    $("#reset-ing-quiz-btn").hide();
 
     $(".drop-ingredient").each(function () {
       var droppable = $(this);
@@ -113,6 +148,7 @@ $(document).ready(function () {
 
       var full_ing = `<br>${ingredient}: ${measure}`;
       droppable.css("background-color", isCorrect ? "#4CAF50" : "#F44336");
+
       var text = (isCorrect ? "Correct!" : "Incorrect!") + full_ing;
       droppable.html(text);
     });
