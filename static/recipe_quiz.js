@@ -61,6 +61,11 @@ $(document).ready(function(){
         var score = calculateScore(correctOrder);
         displayResult(score);
         $("#reset").show(); // Show the reset button
+        $("#simulation-btn").show();
+    });
+
+    $("#simulation-btn").click(function() {
+        window.location.href = "/simulation_quiz/" + recipe_id;
     });
 
     // Function to reset the quiz

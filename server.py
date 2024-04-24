@@ -9,7 +9,6 @@ app = Flask(__name__)
 # contains all lesson and quiz data, load up for routing
 file_path = "lesson_data.json"
 
-
 with open(file_path, "r") as file:
     # all lesson data in one variable
     lessons = json.load(file)
@@ -53,6 +52,11 @@ def recipe_quiz(recipe_id):
     return render_template("recipe_quiz.html", recipe_id=recipe_id)
 
 
+@app.route("/simulation_quiz/<recipe_id>")
+def simulation_quiz(recipe_id):
+    return render_template("simulation_quiz.html", recipe_id=recipe_id)
+
+
 # AJAX FUNCTIONS
 
 
@@ -77,6 +81,20 @@ def load_recipe():
     recipe = lessons[recipe_id]
 
     return jsonify(data=recipe)
+
+
+@app.route("/load_answer_key/<recipe_id>")
+def load_answer_key(recipe_id):
+    answer_key_path = "answer_key.json"  # Adjust the path as needed
+    try:
+        with open(answer_key_path, "r") as file:
+            answer_key_data = json.load(file)
+
+        answer_key = answer_key_data[recipe_id];
+
+        return jsonify(answer_key)
+    except FileNotFoundError:
+        return jsonify({"error": "Answer key not found for the specified recipe ID"}), 404
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@
     font-family: 'Yeseva One', serif;
     font-weight: bold;
     font-size: 32px;
-    color: #314D1C;
+    color: #284e13;
 }
 
 .main-text-padding{
@@ -25,7 +25,7 @@
 }
 
 .button{
-    background-color: #314D1C;
+    background-color: #284e13;
     border-radius: 10px;
     padding: 10px;
 }
@@ -43,12 +43,12 @@
 
     font-size: 17px;
     font-family: 'Montserrat', serif;
-    color: #314D1C;
+    color: #284e13;
 }
 
 .flavor-button:hover{
     color: white;
-    background-color: #314D1C;
+    background-color: #284e13;
 }
 
 #ingredient-title{
@@ -107,7 +107,7 @@
     font-size: 1em; /* Adjust the size as needed */
     margin-top: 20px; /* Space above the text */
     margin-bottom: 5px; /* Space below the text before the button */
-    color: #365923; /* Text color - change as needed */
+    color: #284e13; /* Text color - change as needed */
     text-align: center;
 }
 
@@ -117,13 +117,14 @@
     padding: 10px;
     font-size: 18px;
     font-family: 'Montserrat', serif;
-    color: #314D1C;
+    color: #284e13;
     text-align: center;
+    border: 1px solid #284e13;
 }
 
-.btn-custom:hover {
+.btn-custom:not(:disabled):hover {
     color: white;
-    background-color: #314D1C;
+    background-color: #284e13;
 }
 
 #move-to-ingred-quiz {
@@ -136,7 +137,7 @@
     bottom: 100%; /* Place it above the image container */
     left: 50%; /* Center it horizontally */
     transform: translateX(-50%); /* Align the center of the tooltip with the center of the image */
-    background-color: #314D1C; /* Match the button color for consistency */
+    background-color: #284e13; /* Match the button color for consistency */
     color: white; /* Text color for the tooltip */
     padding: 8px 12px; /* Some padding around the text */
     border-radius: 6px; /* Rounded corners for the tooltip */
@@ -154,20 +155,34 @@
 
 .drag-measurement {
     background-color: #DCE9D5;
-    margin: 7px;
-    padding: 10px;
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    padding: 15px;
+    color: #284e13;
+    font-size: 18px;
 }
+
+.drag-measurement:hover {
+    background-color: #284e13; 
+    color: white; 
+  }
 
 .drop-ingredient {
     background-color: #DCE9D5;
-    margin: 7px;
-    padding: 10px;
+    font-family: 'Montserrat', serif;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    padding: 15px;
+    color: #284e13;
+    font-size: 18px;
 }
 
-.ing-quiz-results {
-    margin: 20px;
-    text-align: center;
-    font-size: 28px;
+.ing-quiz-footer {
+    display: flex;
+    justify-content: center; /* This aligns the child elements (button) horizontally center */
 }
 
 button:disabled {
@@ -301,6 +316,27 @@ button:disabled {
     width: 300px;
     height: 300px;
     background-color: grey;
+<<<<<<< HEAD
+}
+
+#quiz-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.choice-image {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.selected {
+    border: 5px solid #374C23;
+}
+
+.step-container {
+    padding: 20px;
 }
 
 #next-step-btn {
@@ -349,5 +385,85 @@ button:disabled {
 .lesson-btn-container {
     margin-top: 80px;
     display: flex;
+    justify-content: center;
+}
+
+.ing-quiz-btn-container {
+    margin-top: 10px;
+    display: flex;
     justify-content: center; 
 }
+
+#reset-ing-quiz-btn {
+    margin-bottom: 15px;
+}
+
+
+.ing-quiz-question {
+    margin-left: 17px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.ing-quiz-results {
+    margin-top: 30px;
+    font-family: 'Montserrat', serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.step-container {
+    padding: 20px;
+}
+
+#next-step-btn {
+    border: 1px solid #284e13;
+    padding: 8px 18px;
+    margin-left: 5px
+}
+
+#prev-step-btn {
+    padding: 8px 18px;
+    border: 1px solid #284e13;
+    margin-right: 5px;
+}
+
+.flavor-profile-button-container {
+    margin-top: 150px;
+}
+
+#lesson-title {
+    padding: 20px;
+    font-family: 'Yeseva One', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #314D1C;
+}
+
+#lesson-image {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson-description-text {
+    margin-top: 50px;
+    margin-left: 19px;
+    width: 90%;
+}
+
+.move-to-ingredients-btn {
+    font-weight: bold;
+    padding: 12px 22px;
+
+}
+
+.lesson-btn-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+=======
+}
+>>>>>>> parent of a7e11c6 (Revert "Merge remote-tracking branch 'origin/main'")
