@@ -12,7 +12,7 @@ function fetchRecipeData(recipe_id) {
       $(".recipe-header").text(
         `How to Make a ${
           recipe_data.flavor_profile.charAt(0).toUpperCase() +
-          recipe_data.flavor_profile.slice(1)
+          recipe_data.flavor_profile.slice(1).toLowerCase()
         } Martini: The ${recipe_data.recipe_name}`
       );
 
@@ -94,7 +94,6 @@ $(document).ready(function () {
   $("#prev-step-btn").click(function () {
     var currentActive = $(".step-item.active");
     var prevStep = currentActive.prev(".step-item");
-    $("#next-step-btn").text("Next Step");
 
     if (prevStep.length) {
       currentActive.removeClass("active");

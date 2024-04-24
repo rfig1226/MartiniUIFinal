@@ -1,32 +1,22 @@
 {% extends "layout.html" %} {% block content %}
 
-<script
-  type="text/javascript"
-  src="{{ url_for('static', filename = 'start_lesson.js') }}"
-></script>
+    <script
+            type="text/javascript"
+            src="{{ url_for('static', filename = 'start_lesson.js') }}"
+    ></script>
 
-<script>
-  let recipe_id = {{recipe_id|tojson}}
-</script>
+    <script>
+        let recipe_id = {{recipe_id|tojson}}
+    </script>
 
-<body>
-  <div class="container">
-    <div class="main-text-padding" id="lesson-title"></div>
-    <div class="row lesson-details-container">
-      <div class="col-md-8 lesson-description reg-text">
-        <div class="row lesson-description-text"></div>
-        <div class="row lesson-btn-container">
-          <button class="btn-custom move-to-ingredients-btn">
-            Move to Ingredients
-          </button>
+    <body>
+        <div class="container">
+            <h1 class="main-text-padding" id="lesson-title"></h1>
+            <p class="reg-text" id="lesson-description"></p>
+            <img src="" alt="Lesson Image" id="lesson-image">
+            <br>
+            <button class="button button-text" id="move-to-ingredients">Move to Ingredients</button>
         </div>
-      </div>
-      <div class="col-md-4 lesson-start-img-container">
-        <img src="" alt="Lesson Image" id="lesson-image" />
-      </div>
-      <br />
-    </div>
-  </div>
-</body>
+    </body>
 
 {% endblock %}
