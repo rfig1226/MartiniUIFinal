@@ -322,3 +322,52 @@ button:disabled {
 .step-container {
     padding: 20px;
 }
+
+#next-step-btn {
+    border: 1px solid #284e13;
+    padding: 8px 18px;
+    margin-left: 5px
+}
+
+#prev-step-btn {
+    padding: 8px 18px;
+    border: 1px solid #284e13;
+    margin-right: 5px;
+}
+
+.flavor-profile-button-container {
+    margin-top: 150px;
+}
+
+#lesson-title {
+    padding: 20px;
+    font-family: 'Yeseva One', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #314D1C;
+}
+
+#lesson-image {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lesson-description-text {
+    margin-top: 50px;
+    margin-left: 19px;
+    width: 90%;
+}
+
+.move-to-ingredients-btn {
+    font-weight: bold;
+    padding: 12px 22px;
+
+}
+
+.lesson-btn-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
