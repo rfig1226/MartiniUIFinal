@@ -78,19 +78,18 @@ function loadStep(stepIndex) {
     }
 }
 
-// Function to check selected choices against the answers
 function checkAnswers(stepIndex) {
     let selectedChoices = $(".selected").map(function() {
         return $(this).attr("src");
     }).get();
     let correctAnswersStep = answerKey.steps["step" + stepIndex].answers;
 
+    // Remove outlines from all choices
+    $(".choice-image").css("outline", "");
+
     // Reset counts for this step
     let stepCorrectChoices = 0;
     let stepIncorrectChoices = 0;
-
-    // Remove outlines from all choices
-    $(".choice-image").css("outline", "");
 
     // Compare selected choices with correct answers for this step
     selectedChoices.forEach(function(selectedChoice) {
@@ -105,6 +104,13 @@ function checkAnswers(stepIndex) {
         }
     });
 
+    // Highlight correct choices that were not selected
+    correctAnswersStep.forEach(function(correctChoice) {
+        if (!selectedChoices.includes(correctChoice)) {
+            $(`.choice-image[src="${correctChoice}"]`).css("outline", "5px solid #374C23");
+        }
+    });
+
     // Increment global counters
     correctChoicesCount += stepCorrectChoices;
     incorrectChoicesCount += stepIncorrectChoices;
@@ -112,6 +118,8 @@ function checkAnswers(stepIndex) {
     console.log("correct answers: " + stepCorrectChoices);
     console.log("incorrect answers: " + stepIncorrectChoices);
 }
+
+
 
 
 
