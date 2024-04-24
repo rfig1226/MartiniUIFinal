@@ -1,0 +1,68 @@
+{
+  "0": {
+    "id": "0",
+    "steps": {
+      "step1": {
+        "body": "We are going to simulate making a martini! Can you help me make a sweet martini?\n\nBelow are potential tools and ingredients. Beginning with the very first step of making a sweet martini, select all of the tools you need for the first step only and click submit when you are ready to move on.\n",
+        "choices": [
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://www.dekuyperusa.com/sites/default/files/2020-02/11128_DK_Website_329x834_DK_TripleSec_0.png",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s",
+          "https://www.bganfoods.com/wp-content/uploads/2018/06/lemon-juice-4.png",
+          "https://chefsmandala.com/wp-content/uploads/2018/03/Lime-Whole-Half.jpg",
+          "https://www.theladders.com/wp-content/uploads/salt-2-191031-800x450.jpg",
+          "https://mobileimages.lowes.com/productimages/ea5384d4-f7ef-48f0-ad48-6d61fd04ee8d/44678569.jpg",
+          "https://www.ikea.com/us/en/images/products/storsint-martini-glass-clear-glass__0800268_pe767839_s5.jpg"
+        ],
+        "answers": [
+          "https://mobileimages.lowes.com/productimages/ea5384d4-f7ef-48f0-ad48-6d61fd04ee8d/44678569.jpg",
+          "https://www.ikea.com/us/en/images/products/storsint-martini-glass-clear-glass__0800268_pe767839_s5.jpg"
+        ]
+      },
+      "step2": {
+        "equipment": "https://img.fruugo.com/product/4/60/631394604_max.jpg",
+        "body": "Now, we are ready to combine the ingredients. Drag all of the ingredients that need to go into the shaker for the second step. Hit submit when you are done. ",
+        "choices": [
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://www.dekuyperusa.com/sites/default/files/2020-02/11128_DK_Website_329x834_DK_TripleSec_0.png",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s",
+          "https://www.bganfoods.com/wp-content/uploads/2018/06/lemon-juice-4.png",
+          "https://chefsmandala.com/wp-content/uploads/2018/03/Lime-Whole-Half.jpg",
+          "https://www.theladders.com/wp-content/uploads/salt-2-191031-800x450.jpg",
+          "https://mobileimages.lowes.com/productimages/ea5384d4-f7ef-48f0-ad48-6d61fd04ee8d/44678569.jpg",
+          "https://www.ikea.com/us/en/images/products/storsint-martini-glass-clear-glass__0800268_pe767839_s5.jpg",
+          "https://www.clickandgrow.com/cdn/shop/products/apple-mint-1280x960_093fa91e-f325-4f84-b6f3-8467a0330ae5.jpg",
+          "https://138711824.cdn6.editmysite.com/uploads/1/3/8/7/138711824/s480176300984640152_p35_i1_w2400.jpeg"
+        ],
+        "answers": [
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://www.dekuyperusa.com/sites/default/files/2020-02/11128_DK_Website_329x834_DK_TripleSec_0.png",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750",
+          "https://www.bganfoods.com/wp-content/uploads/2018/06/lemon-juice-4.png",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s"
+        ]
+      },
+        "step3": {
+          "equipment": "https://cb.scene7.com/is/image/Crate/AspenMartini8ozSSF23/$web_pdp_main_carousel_low$/240201142617/aspen-martini-glass.jpg",
+          "body": "Ok, recall we are making a lemon drop martini. What would you use to garnish the drink after pouring the martini cocktail in the glass? Drag the garnishes to the glass.\n\n",
+          "choices": [
+            "https://www.clickandgrow.com/cdn/shop/products/apple-mint-1280x960_093fa91e-f325-4f84-b6f3-8467a0330ae5.jpg",
+            "https://t4.ftcdn.net/jpg/01/27/30/29/360_F_127302955_vf7GNzissJvIZDnKm6Zjs5ctxJwtqttc.jpg",
+            "https://www.calgiant.com/wp-content/uploads/2021/08/berry-iso-straw-1-878x1024.png",
+            "https://countrystore.tabasco.eu/cdn/shop/files/NewProject_684x.jpg?v=1687787020",
+            "https://i5.walmartimages.com/seo/Fresh-Lime-Each_12314833-2e54-4739-94a2-7db45b63109d.16ff07e3c111df9be4158853c2e505ef.jpeg",
+            "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
+            "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+          ],
+          "answers": [
+            "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
+            "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+          ]
+        }
+      }
+    }
+}
+
+

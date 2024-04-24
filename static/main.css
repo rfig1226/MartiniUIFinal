@@ -302,3 +302,23 @@ button:disabled {
     height: 300px;
     background-color: grey;
 }
+
+#quiz-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.choice-image {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.selected {
+    border: 5px solid #374C23;
+}
+
+.step-container {
+    padding: 20px;
+}
