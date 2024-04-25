@@ -66,6 +66,7 @@ function loadStep(stepIndex) {
                 $(this).hide();
             } else {
                 // No more steps, quiz is finished
+                $("#quiz-body").empty();
                 showResults();
                 // Hide next button
                 $(this).hide();
@@ -74,6 +75,7 @@ function loadStep(stepIndex) {
     }
     else {
         // No more steps, quiz is finished
+        $("#quiz-body").empty();
         showResults();
     }
 }
@@ -155,5 +157,31 @@ function showResults() {
 // Call the function to load the answer key when the page loads
 $(document).ready(function() {
     console.log("recipe_id: " + recipe_id);
+    fetchRecipeData(recipe_id);
     loadAnswerKey(recipe_id);
 });
+
+function fetchRecipeData(recipe_id) {
+    $.ajax({
+        type: "POST",
+        url: "/load_recipe",
+        contentType: "application/json",
+        data: JSON.stringify({item_id: recipe_id}),
+        dataType: "json", // Ensure you're expecting a JSON response
+        success: function (response) {
+            // Update page content with the fetched data
+            var recipe_data = response.data;
+
+            $("#quiz-header").text(
+                `How to Make a ${
+                    recipe_data.flavor_profile.charAt(0).toUpperCase() +
+                    recipe_data.flavor_profile.slice(1)
+                } Martini: The ${recipe_data.recipe_name} Quiz!`
+            );
+
+        },
+        error: function (xhr, status, error) {
+            console.error("Error fetching recipe data:", error);
+        },
+    });
+}
