@@ -8,27 +8,44 @@
   let lessons = {{lessons|tojson}}
 </script>
 
-<div class="container col-12">
-  <div class="col-12">
-    <div class="main-text main-text-padding">Welcome to Make a Martini!</div>
-  </div>
-  <div class="col-12">
-    <div class="reg-text padding">
-      Embark on a journey to master the classic martini, from the storied
-      Classic to the intriguing Dry and Dirty. Our interactive course blends
-      essential knowledge with a hands-on quiz, inviting you to learn, mix, and
-      shake your way to mixology expertise.
+<div class="container">
+  <div class="row">
+    <div class="home-banner">
+      <img
+        src="../static/images/banner.png"
+        alt="Mastering the Martini Banner"
+        class="banner-img"
+      />
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="col-md-12 slogan">Unleash the Mixologist Within</div>
+      <div class="col-md-12 home-txt">
+        <div class="reg-text padding">
+          Dive into the world of classic cocktails with our interactive martini
+          course. From the timeless classic to sweet and creamy variations,
+          you’ll learn through engaging lessons and hands-on quizzes.
+        </div>
 
-    <div class="reg-text padding">
-      Dive in, discover the secrets of the perfect martini, and elevate your
-      cocktail game. Your mixology adventure starts now!
+        <div class="reg-text padding">
+          Enhance your skills, discover mixology secrets, and gain the
+          confidence to impress at any gathering. Start your journey to martini
+          mastery today!
+        </div>
+      </div>
+      <div class="col-md-12 home-start-button">
+        <button class="btn-custom-dark" id="start-button">
+          Master the Martini
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="col-12">
-    <button class="button button-text" id="start-button">
-      Learn how to make a martini
-    </button>
+    <div class="col-md-4">
+      <div class="home-recipes">Recipes</div>
+      <div class="home-recipes-desc">
+        Already completed the lessons? Revisit the recipes you learned!
+      </div>
+    </div>
   </div>
 </div>
 

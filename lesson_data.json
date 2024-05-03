@@ -90,7 +90,7 @@
     "recipe_name": "Espresso Martini",
     "ingredients": {
       "coffee liqueur": {
-        "info":"Enhances the cocktail with a rich, caramel sweetness.",
+        "info": "Enhances the cocktail with a rich, caramel sweetness.",
         "amount": "1.5 oz",
         "image": "https://images.squarespace-cdn.com/content/v1/5c3dfd275cfd79131b207c18/1552078168183-RI06ZE4L3M6RHTG5JWWX/Kahlua+500x500.png",
         "type": "ingredient"
@@ -129,7 +129,6 @@
         "image": "https://img.fruugo.com/product/4/60/631394604_max.jpg",
         "type": "equipment"
       }
-
     },
     "steps": {
       "step1": {
@@ -167,7 +166,6 @@
         "step_video": "video placeholder"
       }
     }
-
   },
   "2": {
     "id": "2",
@@ -240,6 +238,4 @@
       }
     }
   }
-
-
 }

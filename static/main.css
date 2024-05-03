@@ -21,7 +21,7 @@
 }
 
 .reg-text.padding {
-    padding: 40px;
+    padding: 20px;
 }
 
 .button{
@@ -93,7 +93,7 @@
     max-height: 100px; /* This will constrain the height of taller images */
 }
 
-.ingredient-name, .ingredient-amount {
+.ingredient-name {
     font-size: 0.9em;
     margin-top: 0.5em;
     text-align: center;
@@ -125,6 +125,22 @@
 .btn-custom:not(:disabled):hover {
     color: white;
     background-color: #284e13;
+}
+
+.btn-custom-dark {
+    background-color: #284e13;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', serif;
+    color: white;
+    text-align: center;
+    border: 1px solid #284e13;
+    border-radius: 10px;
+}
+
+.btn-custom-dark:not(:disabled):hover {
+    color: #284e13;
+    background-color: #DCE9D5;
 }
 
 #move-to-ingred-quiz {
@@ -316,7 +332,6 @@ button:disabled {
     width: 300px;
     height: 300px;
     background-color: grey;
-
 }
 
 #quiz-container {
@@ -463,4 +478,70 @@ button:disabled {
     margin-top: 80px;
     display: flex;
     justify-content: center;
+}
+
+.banner-img {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-txt {
+    width: 90%;
+    margin-left: 70px;
+}
+
+#start-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 23px;
+}
+
+.slogan {
+    font-size: 28px;
+    font-style: italic;
+    font-family: 'Montserrat', serif;
+    color: #314D1C;
+    text-align: center;
+}
+
+.slogan:after {
+    content: '';
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 88%; 
+    height: 1px; 
+    background-color: lightgrey; 
+    margin-top: 13px;
+}
+
+.home-recipes {
+    color:#284e13;
+    font-family: 'Yeseva One', serif;
+    font-size: 28px;
+}
+
+.home-recipes-desc {
+    margin-top: 7px;
+    font-family: 'Montserrat', serif;
+    color: gray;
+    width: 80%;
+    padding-right: 10px;
+}
+
+.home-recipes-desc:after {
+    content: ''; 
+    display: block; 
+    width: 88%; /* Line width to match element width */
+    height: 1px; /* Line thickness */
+    background-color: lightgrey; 
+    margin-top: 13px;
 }
