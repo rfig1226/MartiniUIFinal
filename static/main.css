@@ -68,6 +68,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 60px;
 }
 
 .ingredient-item {
@@ -94,10 +95,11 @@
 }
 
 .ingredient-name {
+    color:#284e13;
+    font-family: 'Yeseva One', serif;
     font-size: 0.9em;
     margin-top: 0.5em;
     text-align: center;
-    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     margin-bottom: 16px; /* Adds space below the name for consistent alignment */
@@ -313,7 +315,8 @@ button:disabled {
 
 
 .fixed-bottom {
-    position: fixed; /* Fix to the bottom */
+    position: relative;
+    margin-top: 30px;
     bottom: 20px;      /* Position it at the bottom of the page */
     left: 0;        /* Stretch across the page */
     width: 100%;    /* Ensure it spans the width of the viewport */
@@ -370,7 +373,7 @@ button:disabled {
     margin-top: 150px;
 }
 
-#lesson-title {
+.section-title {
     padding: 20px;
     font-family: 'Yeseva One', serif;
     font-weight: bold;
@@ -422,7 +425,8 @@ button:disabled {
 
 .ing-quiz-results {
     margin-top: 30px;
-    font-family: 'Montserrat', serif;
+    font-family: 'Yeseva One', serif;
+    color: #284e13;
     font-size: 36px;
     text-align: center;
 }
@@ -540,8 +544,130 @@ button:disabled {
 .home-recipes-desc:after {
     content: ''; 
     display: block; 
-    width: 88%; /* Line width to match element width */
+    width: 95%; /* Line width to match element width */
     height: 1px; /* Line thickness */
     background-color: lightgrey; 
     margin-top: 13px;
+}
+
+.flavor-profile-img img {
+    width: 90%;
+    height: auto;
+}
+
+.flavor-profiles {
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.flavor-profile-title {
+    color: #284e13;
+    font-family: 'Yeseva One', serif;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.flavor-profile-title:hover {
+    text-decoration: underline;
+}
+
+.flavor-profile-column {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.measurement-required {
+    font-size: 10px;
+    font-style: italic;
+    color: gray;
+}
+
+.recipe-quiz-header {
+    font-size: 30px;
+}
+
+#steps-list {
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+#recipe-quiz-instructions {
+    font-family: 'Yeseva One', serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#recipe-quiz-container {
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+#result {
+    margin-bottom: 20px;
+}
+
+#simulation-btn {
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px; 
+}
+
+.learning-module-link {
+    color: #284e13; 
+    font-weight: bold;
+    text-decoration: underline; 
+}
+
+.recipe-start-desc {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.home-flavor-profile-img img {
+    width: 90%;
+    height: auto;
+}
+
+.home-flavor-profile-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 0;         
+    margin-left: 0;  
+    font-size: 18px;
+    font-family: 'Yeseva One', serif;
+}
+
+.home-flavor-profile-title:hover {
+    text-decoration: underline;
+}
+
+.home-flavor-profile {
+    margin-top: 20px;
+}
+
+.home-flavor-profile:after {
+    content: ''; 
+    display: block; 
+    width: 70%; 
+    height: 1px;
+    background-color: lightgrey; 
+    margin-top: 13px;
+    margin-left: 10px;
+}
+
+.home-recipes-container {
+    margin-bottom: 50px;
 }

@@ -13,7 +13,7 @@ $(document).ready(function () {
       success: function (response) {
         // Update page content with the fetched data
         var recipeData = response.data;
-        $("#lesson-title").text(
+        $(".section-title").text(
           "How to Make a " +
             recipeData.flavor_profile[0].toUpperCase() +
             recipeData.flavor_profile.slice(1) +

@@ -72,44 +72,64 @@ $(document).ready(function () {
     var currentActive = $(".step-item.active");
     var nextStep = currentActive.next(".step-item");
 
+    // if more steps
     if (nextStep.length) {
       currentActive.removeClass("active");
       nextStep.addClass("active");
-      // Always enable the 'Previous Step' button when moving from the first step
       $("#prev-step-btn").prop("disabled", false);
     }
 
-    // Automatically append the button if it's the last step
+    // if on last step
     if (!nextStep.next(".step-item").length) {
-      $(this).text("Test Your Knowledge"); // Change the button text to "Go to Quiz"
+      $(this).text("Test Your Knowledge");
       $(this)
         .off("click")
         .click(function () {
-          // Remove previous click handlers and add new one
-          window.location.href = "/recipe_quiz/" + recipe_id; // Redirect to the quiz page
+          window.location.href = "/recipe_quiz/" + recipe_id;
         });
+    } else {
+      $(this).text("Next Step");
+      $(this).off("click").click(nextStepHandler);
     }
   });
 
   $("#prev-step-btn").click(function () {
     var currentActive = $(".step-item.active");
     var prevStep = currentActive.prev(".step-item");
-    $("#next-step-btn").text("Next Step");
 
     if (prevStep.length) {
       currentActive.removeClass("active");
       prevStep.addClass("active");
+      $("#next-step-btn").text("Next Step");
+      $("#next-step-btn").off("click").click(nextStepHandler);
       $("#next-step-btn").prop("disabled", false);
     }
 
     if (prevStep.is(":first-child")) {
       $("#prev-step-btn").prop("disabled", true);
     }
-
-    // Remove the quiz button if not on the last step anymore
-    if (!prevStep.is(":last-child")) {
-      // Check if it's no longer the last step
-      $("#go-recipe-quiz-btn").remove();
-    }
   });
+
+  function nextStepHandler() {
+    var currentActive = $(".step-item.active");
+    var nextStep = currentActive.next(".step-item");
+
+    if (nextStep.length) {
+      currentActive.removeClass("active");
+      nextStep.addClass("active");
+      $("#prev-step-btn").prop("disabled", false);
+    }
+
+    if (!nextStep.next(".step-item").length) {
+      // last step
+      $(this).text("Test Your Knowledge");
+      $(this)
+        .off("click")
+        .click(function () {
+          window.location.href = "/recipe_quiz/" + recipe_id;
+        });
+    }
+  }
+
+  $("#next-step-btn").click(nextStepHandler);
 });

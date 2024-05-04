@@ -74,8 +74,15 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <!-- Need href for where we want these to take the user -->
-            <a class="nav-link reg-text" href="start.html"> Learn </a>
-            <a class="nav-link reg-text"> More Recipes </a>
+            <a class="nav-link reg-text" href="{{ url_for('start') }}">
+              Learn
+            </a>
+            <a
+              class="nav-link reg-text"
+              href="{{ url_for('recipe_alone_start') }}"
+            >
+              Recipes
+            </a>
             <a class="nav-link reg-text"> Quiz </a>
           </div>
         </div>

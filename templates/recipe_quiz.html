@@ -10,13 +10,21 @@
 </script>
 
 <div class="container">
-    <h2 class="main-text">Arrange the steps in the correct order:</h2>
-    <ul class="sortable reg-text" id="steps-list">
-        <!-- Steps will be dynamically inserted here -->
-    </ul>
+  <div class="section-title recipe-quiz-header">Recipe Quiz Time!</div>
+  <div id="recipe-quiz-instructions">
+    Arrange the steps in the correct order:
+  </div>
+  <ul class="sortable reg-text" id="steps-list">
+    <!-- Steps will be dynamically inserted here -->
+  </ul>
+  <div id="recipe-quiz-container">
     <button class="btn-custom" id="check-answers">Check Answers</button>
     <div class="main-text" id="result"></div>
-    <button class="button" id="reset" style="display: none;">Reset</button> <!-- Initially hidden -->
-    <button id="simulation-btn" style="display: none;">Time for the real deal!</button>
+    <button class="btn-custom" id="reset" style="display: none">Reset</button>
+    <!-- Initially hidden -->
+    <button class="btn-custom-dark" id="simulation-btn" style="display: none">
+      Time for the real deal!
+    </button>
+  </div>
 </div>
 {% endblock %}

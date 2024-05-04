@@ -57,6 +57,16 @@ def simulation_quiz(recipe_id):
     return render_template("simulation_quiz.html", recipe_id=recipe_id)
 
 
+@app.route("/recipe_alone_start")
+def recipe_alone_start():
+    return render_template("recipe_alone_start.html", lessons=lessons)
+
+
+@app.route("/recipe_alone/<recipe_id>")
+def recipe_alone(recipe_id):
+    return render_template("recipe_alone.html", recipe_id=recipe_id)
+
+
 # AJAX FUNCTIONS
 
 
@@ -90,11 +100,14 @@ def load_answer_key(recipe_id):
         with open(answer_key_path, "r") as file:
             answer_key_data = json.load(file)
 
-        answer_key = answer_key_data[recipe_id];
+        answer_key = answer_key_data[recipe_id]
 
         return jsonify(answer_key)
     except FileNotFoundError:
-        return jsonify({"error": "Answer key not found for the specified recipe ID"}), 404
+        return (
+            jsonify({"error": "Answer key not found for the specified recipe ID"}),
+            404,
+        )
 
 
 if __name__ == "__main__":

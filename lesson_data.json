@@ -2,8 +2,8 @@
   "0": {
     "id": "0",
     "flavor_profile": "sweet",
-    "description": "There are endless martini recipes with a spicy flavor profile. To become familiar with crafting recipes and ordering margaritas in the spicy taste group, we will be learning how to make a Lemon Drop Martini. Since most martinis have the same steps, you can also skip straight to the stand-alone recipe for the Lemon Drop Martini.\n",
-    "image": "https://i0.wp.com/www.imbored-letsgo.com/wp-content/uploads/2013/07/Lemon-Drop-Martini_.jpg?ssl=1",
+    "description": "There are endless martini recipes with a sweet flavor profile. To become familiar with crafting recipes and ordering margaritas in the sweet taste group, we will be learning how to make a Lemon Drop Martini. Since most martinis have the same steps, you can also skip straight to the stand-alone recipe for the Lemon Drop Martini.\n",
+    "image": "https://bakeitwithlove.com/wp-content/uploads/2023/04/lemon-drop-martini-sq.jpg.webp",
     "recipe_name": "Lemon Drop Martini",
     "ingredients": {
       "lemon juice": {
@@ -115,7 +115,7 @@
       },
       "coffee beans": {
         "info": "Used as a garnish to add aroma and a decorative touch!",
-        "amount": "3",
+        "amount": "3 beans",
         "image": "https://t3.ftcdn.net/jpg/05/47/12/28/360_F_547122875_kVX9skGAnGYaqqLHIsL1tffFZGoENekz.jpg",
         "type": "ingredient"
       },

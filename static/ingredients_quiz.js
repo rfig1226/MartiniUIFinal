@@ -1,7 +1,4 @@
 $(document).ready(function () {
-  // Get the recipe_id from the URL
-  console.log("recipe id: " + recipe_id);
-
   // Call the function to fetch recipe data when the page loads
   fetchRecipeData(recipe_id);
   let totalCount = 0;
@@ -130,9 +127,11 @@ $(document).ready(function () {
 
   $("#reset-ing-quiz-btn").click(resetQuiz);
 
-  // Redirect to ingredients page when the button is clicked
   $("#submit-quiz").click(function () {
-    $(".ing-quiz-results").text("Results: " + matchCount + "/" + totalCount);
+    var percentage = Math.round((matchCount / totalCount) * 100);
+    $(".ing-quiz-results").text(
+      "Results: " + percentage + "% (" + matchCount + "/" + totalCount + ")"
+    );
     let goRecipeButton = $(
       "<button class='btn-custom' id='go-recipe-button'>Learn Recipe</button>"
     );
