@@ -20,7 +20,9 @@ $(document).ready(function () {
             " Martini"
         );
         $(".lesson-description-text").text(recipeData.description);
-        $("#lesson-image").attr("src", recipeData.image);
+        $("#lesson-image").attr("src", recipeData["images"][0]);
+        $(".lesson-recipe-name").text(`The ${recipeData.recipe_name}`);
+        $(".lesson-recipe-preptime").text(`Prep Time: ${recipeData.prep_time}`);
       },
       error: function (xhr, status, error) {
         console.error("Error fetching recipe data:", error);

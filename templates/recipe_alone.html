@@ -12,15 +12,21 @@
 <div class="container">
   <div class="recipe-alone-title section-title"></div>
   <div class="row recipe-alone-images"></div>
+  <div class="row recipe-description reg-text"></div>
   <div class="row recipe-details">
-    <div class="serving"></div>
-    <div class="prep-time"></div>
+    <div class="col-md-6 recipe-serving">Serves 1</div>
+    <div class="col-md-6 recipe-prep-time"></div>
   </div>
-  <div class="row recipe-alone-container">
-    <div class="col-md-6 recipe-alone-ingredients"></div>
-    <div class="col-md-6 recipe-alone-steps"></div>
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10 recipe-alone-container">
+      <div class="row">
+        <div class="col-md-6 recipe-alone-ingredients"></div>
+        <div class="col-md-6 recipe-alone-steps"></div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
   </div>
-  <div class="enjoy">Enjoy!</div>
 </div>
 
 {% endblock %}

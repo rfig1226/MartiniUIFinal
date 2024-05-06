@@ -3,8 +3,13 @@
     "id": "0",
     "flavor_profile": "sweet",
     "description": "There are endless martini recipes with a sweet flavor profile. To become familiar with crafting recipes and ordering margaritas in the sweet taste group, we will be learning how to make a Lemon Drop Martini. Since most martinis have the same steps, you can also skip straight to the stand-alone recipe for the Lemon Drop Martini.\n",
-    "image": "https://bakeitwithlove.com/wp-content/uploads/2023/04/lemon-drop-martini-sq.jpg.webp",
+    "images": [
+      "https://sabrinacurrie.com/wp-content/uploads/2022/06/Lavender-Lemon-Drop-Martini-Recipe-22-1200x1200.jpg",
+      "https://bakeitwithlove.com/wp-content/uploads/2023/04/lemon-drop-martini-sq.jpg.webp",
+      "https://theartoffoodandwine.com/wp-content/uploads/2020/12/aaaaalemon2-500x500.jpg"
+    ],
     "recipe_name": "Lemon Drop Martini",
+    "prep_time": "7 minutes",
     "ingredients": {
       "lemon juice": {
         "info": "It would not be a lemon drop martini without lemon juice! Any will work for this recipe!",
@@ -86,8 +91,13 @@
     "id": "1",
     "flavor_profile": "creamy",
     "description": "There's a rich array of martini recipes with a robust, coffee-inspired twist. To explore the art of crafting and enjoying these caffeinated delights, we'll delve into the making of the Espresso Martini. As with many martinis, the preparation steps are quite similar, allowing you to easily jump to the standalone recipe for this velvety, coffee-flavored cocktail.\n",
-    "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-10-espresso-martini%2F2021-10-12_ATK8093",
+    "images": [
+      "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-10-espresso-martini%2F2021-10-12_ATK8093",
+      "https://thehealthfulideas.com/wp-content/uploads/2022/11/Tequila-Espresso-Martini-SQUARE.jpg",
+      "https://thehealthfulideas.com/wp-content/uploads/2023/10/Rum-Espresso-Martini-SQUARE.jpg"
+    ],
     "recipe_name": "Espresso Martini",
+    "prep_time": "7 minutes",
     "ingredients": {
       "coffee liqueur": {
         "info": "Enhances the cocktail with a rich, caramel sweetness.",
@@ -171,8 +181,13 @@
     "id": "2",
     "flavor_profile": "classic",
     "description": "There’s a timeless elegance to the classic martini, known for its crisp and clear sophistication. To master the art of mixing this iconic cocktail, we will focus on the traditional preparation of the Classic Martini. The process is straightforward, following the same meticulous steps used across martini variations, allowing you to quickly refer to the definitive recipe for this quintessentially smooth, gin-and-vermouth blend.\n",
-    "image": "https://www.liquor.com/thmb/0yAgdfbu0NMeJ5OOT720kH3rMKc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dry-martini-1500x1500-hero-b0e9fa9cb79440879d487bec87d72a2d.jpg",
+    "images": [
+      "https://assets.bonappetit.com/photos/616730026f14717d799f49a5/1:1/w_2560%2Cc_limit/BA1121tucci01_test.jpg",
+      "https://www.thebotanist.com/cdn/shop/files/The_Botanist_Wet_Martini_f54ae647-fb5c-4ec4-aa99-1868130cf730.png?v=1667787684&width=630",
+      "https://www.liquor.com/thmb/0yAgdfbu0NMeJ5OOT720kH3rMKc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dry-martini-1500x1500-hero-b0e9fa9cb79440879d487bec87d72a2d.jpg"
+    ],
     "recipe_name": "Classic Martini",
+    "prep_time": "5 minutes",
     "ingredients": {
       "gin": {
         "info": "The spirit foundation of the Classic Martini, offering botanical notes that are crisp and aromatic.",

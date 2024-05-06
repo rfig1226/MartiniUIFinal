@@ -1,7 +1,7 @@
 $(document).ready(function () {
   for (let recipe_id in lessons) {
     let recipe_data = lessons[recipe_id];
-    let image = recipe_data["image"];
+    let image = recipe_data["images"][0];
     let recipe_name = recipe_data["recipe_name"];
     console.log(recipe_name);
     let flavor_column = $(

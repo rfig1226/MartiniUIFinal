@@ -1,8 +1,7 @@
 $(document).ready(function () {
-  let reversed_lessons = Object.keys(lessons).reverse();
-  for (let recipe_id in reversed_lessons) {
+  for (let recipe_id in lessons) {
     let recipe_data = lessons[recipe_id];
-    let image = recipe_data["image"];
+    let image = recipe_data["images"][0];
     let profile = recipe_data["flavor_profile"];
     profile = profile[0].toUpperCase() + profile.slice(1);
     let flavor_column = $(

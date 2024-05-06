@@ -1,7 +1,7 @@
 $(document).ready(function () {
   for (let recipe_id in lessons) {
     let recipe_data = lessons[recipe_id];
-    let image = recipe_data["image"];
+    let image = recipe_data["images"][0];
     let recipe_name = recipe_data["recipe_name"];
     let flavor_column = $(
       `<div class="col-md-4 flavor-profile-column">
@@ -14,10 +14,10 @@ $(document).ready(function () {
          </div>`
     );
 
-    $(".recipe-alone-container").append(flavor_column);
+    $(".recipe-options-container").append(flavor_column);
   }
 
-  $(".recipe-alone-container").on(
+  $(".recipe-options-container").on(
     "click",
     ".flavor-profile-img img, .flavor-profile-title",
     function () {
