@@ -78,6 +78,7 @@ function checkAnswers(stepIndex) {
 
         // Remove outlines from all choices
         $(".choice-image").css("outline", "");
+        $(".choice-image").removeClass("selected");
 
         // Reset counts for this step
         let stepCorrectChoices = 0;
@@ -133,10 +134,15 @@ function calculateResults() {
     console.log(
         "Overall: " + correctChoicesCount + " " + incorrectChoicesCount
     );
-    let overallScore = correctChoicesCount - incorrectChoicesCount * 0.5;
+    let overallScore = correctChoicesCount - incorrectChoicesCount * 0.25;
 
     // Calculate the score
     let score = (overallScore / totalQuestions) * 100;
+
+    if (score < 0){
+        score = 0;
+    }
+
     return score.toFixed(2);
 }
 
@@ -150,6 +156,18 @@ function showResults() {
     // Show the score
     $("#step-container").addClass("ing-quiz-results");
     $("#step-container").text("Your score: " + score + "%");
+
+    if (score > 85) {
+        $("#quiz-status").text("Congratulations! You're a Martini Master!");
+    }
+    else if (score > 70) {
+        $("#quiz-status").text("You're well on your way to becoming a Martini Master!");
+    }
+    else if (score > 0) {
+        $("#quiz-status").text("That's okay, let's try again!");
+    }
+    else
+        $("#quiz-status").text("Let's review some more, then give it another shot!");
 
     let lessons_btn = $(
         "<div><button class='btn-custom learn-more-btn'>Learn More Recipes</button></div>"
