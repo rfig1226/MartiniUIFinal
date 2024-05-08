@@ -1,30 +1,30 @@
 {% extends "layout.html" %} {% block content %}
-<script
-        type="text/javascript"
-        src="{{ url_for('static', filename = 'simulation_quiz.js') }}"
-></script>
+    <script
+            type="text/javascript"
+            src="{{ url_for('static', filename = 'simulation_quiz.js') }}"
+    ></script>
 
-<script>
-  let recipe_id = {{recipe_id|tojson}}
-</script>
+    <script>
+        let recipe_id =
+        {{recipe_id|tojson}}
+    </script>
 
-<div id="quiz-container">
-  <div id="quiz-header" class="recipe-header">
+    <div id="quiz-container">
+        <div id="quiz-header" class="recipe-header">
 
-  </div>
-  <div id="quiz-body" class="sub-step-description">
+        </div>
+        <div id="quiz-body" class="sub-step-description">
 
-  </div>
-  <div id="step-container" class="step-container col-md-12">
-    <!-- Step content will be dynamically added here -->
-  </div>
-  <button id="submit-bttn" class="button button-text" disabled>Submit</button>
-  <button id="next-bttn" class="button button-text" style="display:none;">Next</button>
-  <button id="results-bttn" class="btn-custom" style="display:none;">Results</button>
-  <div id="quiz-results" class="ing-quiz-results">
+        </div>
+        <div id="step-container" class="step-container col-md-12">
+            <!-- Step content will be dynamically added here -->
+        </div>
+        <button id="submit-bttn" class="button button-text" disabled>Submit</button>
+        <button id="next-bttn" class="button button-text" style="display:none;">Next</button>
+        <button id="results-bttn" class="btn-custom" style="display:none;">Results</button>
+        <div id="quiz-results" class="ing-quiz-results"></div>
         <div id="quiz-status" class="ing-quiz-results"></div>
-  </div>
-</div>
+    </div>
 
 {% endblock %}
 

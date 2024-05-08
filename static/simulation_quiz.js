@@ -154,26 +154,47 @@ function showResults() {
     let score = calculateResults();
     console.log("score:" + score);
     // Show the score
-    $("#step-container").addClass("ing-quiz-results");
-    $("#step-container").text("Your score: " + score + "%");
+    $("#step-container").empty();
+    $("#quiz-results").text("Your score: " + score + "%");
 
     if (score > 85) {
+        $("#quiz-results").append($('<img>', {
+            id: 'mastery',
+            class:'quiz-gif' ,
+            src: 'https://reactiongifs.me/cdn-cgi/imagedelivery/S36QsAbHn6yI9seDZ7V8aA/f25f4cf6-87a4-49a3-9625-b68e32c26700/w=500'
+        }))
         $("#quiz-status").text("Congratulations! You're a Martini Master!");
     }
     else if (score > 70) {
+        $("#quiz-results").append($('<img>', {
+            id: 'celebratory',
+            class:'quiz-gif' ,
+            src: 'https://www.icegif.com/wp-content/uploads/2022/07/icegif-159.gif'
+        }))
         $("#quiz-status").text("You're well on your way to becoming a Martini Master!");
     }
     else if (score > 0) {
+        $("#quiz-results").append($('<img>', {
+            id: 'whoops',
+            class:'quiz-gif' ,
+            src: 'https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYWtyZjd2Mm9wemFnaWgxMHQzNTd6N2swZHU0ejBlZHVvMmJlbWx1NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/j9SlCd2tXnh4zF8UsU/giphy.gif'
+        }))
         $("#quiz-status").text("That's okay, let's try again!");
     }
-    else
+    else {
+        $("#quiz-results").append($('<img>', {
+            id: 'try_again',
+            class: 'quiz-gif',
+            src: 'https://gifdb.com/images/high/megan-mullaly-drinking-alcohol-dod1stdphxjlfjuq.webp'
+        }))
         $("#quiz-status").text("Let's review some more, then give it another shot!");
+    }
 
     let lessons_btn = $(
         "<div><button class='btn-custom learn-more-btn'>Learn More Recipes</button></div>"
     );
 
-    $("#step-container").append(lessons_btn);
+    $("#quiz-status").append(lessons_btn);
 }
 
 // Call the function to load the answer key when the page loads

@@ -937,4 +937,13 @@ button:disabled {
     font-size: 1.1em; /* Adjust paragraph font size */
     margin: 0; /* Remove additional margins */
   }
-  
+
+  .quiz-gif-container {
+      width: 80%;
+      height: auto;
+      text-align: center;
+  }
+
+  .quiz-gif {
+      width: 80%;
+  }
