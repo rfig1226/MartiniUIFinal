@@ -1,4 +1,61 @@
 {
+  "0": {
+    "id": "0",
+    "steps": {
+      "step1": {
+        "type": "select",
+        "body": "We are going to simulate making a martini! Can you help me make a classic martini?\n\nBelow are potential tools and ingredients. Beginning with the very first step of making a classic martini, select all of the tools you need for the first step only and click submit when you are ready to move on.\n",
+        "choices": [
+          "https://www.craftspiritsxchange.com/media/catalog/product/b/e/beefeater-750-new-web.png",
+          "https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version=1_2,format=auto,fit=scale-down,width=800,height=800/002c28a5-60f2-4edd-960f-6ab68f47ec2d.png",
+          "https://t3.ftcdn.net/jpg/03/07/21/84/360_F_307218492_JXw5wRQLUQuoLFzO4tanp0DKwPAeCYCM.jpg",
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://mobileimages.lowes.com/productimages/ea5384d4-f7ef-48f0-ad48-6d61fd04ee8d/44678569.jpg",
+          "https://www.ikea.com/us/en/images/products/storsint-martini-glass-clear-glass__0800268_pe767839_s5.jpg"
+        ],
+        "answers": [
+          "https://mobileimages.lowes.com/productimages/ea5384d4-f7ef-48f0-ad48-6d61fd04ee8d/44678569.jpg",
+          "https://www.ikea.com/us/en/images/products/storsint-martini-glass-clear-glass__0800268_pe767839_s5.jpg"
+        ]
+      },
+      "step2": {
+        "type": "drag",
+        "equipment": "https://img.fruugo.com/product/4/60/631394604_max.jpg",
+        "body": "Now, we are ready to combine the ingredients. Drag all of the ingredients that need to go into the shaker for the second step. Hit submit when you are done. ",
+        "choices": [
+          "https://www.craftspiritsxchange.com/media/catalog/product/b/e/beefeater-750-new-web.png",
+          "https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version=1_2,format=auto,fit=scale-down,width=800,height=800/002c28a5-60f2-4edd-960f-6ab68f47ec2d.png",
+          "https://t3.ftcdn.net/jpg/03/07/21/84/360_F_307218492_JXw5wRQLUQuoLFzO4tanp0DKwPAeCYCM.jpg",
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://mobileimages.lowes.com/productimages/ea5384d4-f7ef-48f0-ad48-6d61fd04ee8d/44678569.jpg",
+          "https://www.ikea.com/us/en/images/products/storsint-martini-glass-clear-glass__0800268_pe767839_s5.jpg"
+        ],
+        "answers": [
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://www.craftspiritsxchange.com/media/catalog/product/b/e/beefeater-750-new-web.png",
+          "https://images.gopuff.com/blob/gopuffcatalogstorageprod/catalog-images-container/resize/cf/version=1_2,format=auto,fit=scale-down,width=800,height=800/002c28a5-60f2-4edd-960f-6ab68f47ec2d.png"
+        ]
+      },
+      "step3": {
+        "type": "drag",
+        "equipment": "https://cb.scene7.com/is/image/Crate/AspenMartini8ozSSF23/$web_pdp_main_carousel_low$/240201142617/aspen-martini-glass.jpg",
+        "body": "Ok, recall we are making a classic martini. What would you use to garnish the drink after pouring the martini cocktail in the glass? Drag the garnishes to the glass.\n\n",
+        "choices": [
+          "https://www.clickandgrow.com/cdn/shop/products/apple-mint-1280x960_093fa91e-f325-4f84-b6f3-8467a0330ae5.jpg",
+          "https://t4.ftcdn.net/jpg/01/27/30/29/360_F_127302955_vf7GNzissJvIZDnKm6Zjs5ctxJwtqttc.jpg",
+          "https://www.calgiant.com/wp-content/uploads/2021/08/berry-iso-straw-1-878x1024.png",
+          "https://t3.ftcdn.net/jpg/03/07/21/84/360_F_307218492_JXw5wRQLUQuoLFzO4tanp0DKwPAeCYCM.jpg",
+          "https://countrystore.tabasco.eu/cdn/shop/files/NewProject_684x.jpg?v=1687787020",
+          "https://i5.walmartimages.com/seo/Fresh-Lime-Each_12314833-2e54-4739-94a2-7db45b63109d.16ff07e3c111df9be4158853c2e505ef.jpeg",
+          "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+        ],
+        "answers": [
+          "https://t3.ftcdn.net/jpg/03/07/21/84/360_F_307218492_JXw5wRQLUQuoLFzO4tanp0DKwPAeCYCM.jpg"
+        ]
+      }
+    }
+  },
   "1": {
     "id": "1",
     "steps": {
@@ -46,26 +103,88 @@
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s"
         ]
       },
-        "step3": {
-          "type": "drag",
-          "equipment": "https://cb.scene7.com/is/image/Crate/AspenMartini8ozSSF23/$web_pdp_main_carousel_low$/240201142617/aspen-martini-glass.jpg",
-          "body": "Ok, recall we are making a lemon drop martini. What would you use to garnish the drink after pouring the martini cocktail in the glass? Drag the garnishes to the glass.\n\n",
-          "choices": [
-            "https://www.clickandgrow.com/cdn/shop/products/apple-mint-1280x960_093fa91e-f325-4f84-b6f3-8467a0330ae5.jpg",
-            "https://t4.ftcdn.net/jpg/01/27/30/29/360_F_127302955_vf7GNzissJvIZDnKm6Zjs5ctxJwtqttc.jpg",
-            "https://www.calgiant.com/wp-content/uploads/2021/08/berry-iso-straw-1-878x1024.png",
-            "https://countrystore.tabasco.eu/cdn/shop/files/NewProject_684x.jpg?v=1687787020",
-            "https://i5.walmartimages.com/seo/Fresh-Lime-Each_12314833-2e54-4739-94a2-7db45b63109d.16ff07e3c111df9be4158853c2e505ef.jpeg",
-            "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
-            "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
-          ],
-          "answers": [
-            "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
-            "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
-          ]
-        }
+      "step3": {
+        "type": "drag",
+        "equipment": "https://cb.scene7.com/is/image/Crate/AspenMartini8ozSSF23/$web_pdp_main_carousel_low$/240201142617/aspen-martini-glass.jpg",
+        "body": "Ok, recall we are making a lemon drop martini. What would you use to garnish the drink after pouring the martini cocktail in the glass? Drag the garnishes to the glass.\n\n",
+        "choices": [
+          "https://www.clickandgrow.com/cdn/shop/products/apple-mint-1280x960_093fa91e-f325-4f84-b6f3-8467a0330ae5.jpg",
+          "https://t4.ftcdn.net/jpg/01/27/30/29/360_F_127302955_vf7GNzissJvIZDnKm6Zjs5ctxJwtqttc.jpg",
+          "https://www.calgiant.com/wp-content/uploads/2021/08/berry-iso-straw-1-878x1024.png",
+          "https://countrystore.tabasco.eu/cdn/shop/files/NewProject_684x.jpg?v=1687787020",
+          "https://i5.walmartimages.com/seo/Fresh-Lime-Each_12314833-2e54-4739-94a2-7db45b63109d.16ff07e3c111df9be4158853c2e505ef.jpeg",
+          "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+        ],
+        "answers": [
+          "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+        ]
       }
     }
+  },
+  "2": {
+    "id": "2",
+    "steps": {
+      "step1": {
+        "type": "select",
+        "body": "We are going to simulate making a martini! Can you help me make a creamy martini?\n\nBelow are potential tools and ingredients. Beginning with the very first step of making a creamy martini, select all of the tools you need for the first step only and click submit when you are ready to move on.\n",
+        "choices": [
+          "https://images.squarespace-cdn.com/content/v1/5c3dfd275cfd79131b207c18/1552078168183-RI06ZE4L3M6RHTG5JWWX/Kahlua+500x500.png",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s",
+          "https://static.vecteezy.com/system/resources/thumbnails/011/155/314/small/espresso-with-spoon-isolated-png.png",
+          "https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2018/09/84801-STIRRINGS-SIMPLE-SYRUP.png",
+          "https://t3.ftcdn.net/jpg/05/47/12/28/360_F_547122875_kVX9skGAnGYaqqLHIsL1tffFZGoENekz.jpg",
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://www.muji.com.kw/assets/ProductImages/J-4547315581191/4547315581191_1260.jpg"
+        ],
+        "answers": [
+          "https://www.muji.com.kw/assets/ProductImages/J-4547315581191/4547315581191_1260.jpg",
+          "https://static.vecteezy.com/system/resources/thumbnails/011/155/314/small/espresso-with-spoon-isolated-png.png"
+        ]
+      },
+      "step2": {
+        "type": "drag",
+        "equipment": "https://img.fruugo.com/product/4/60/631394604_max.jpg",
+        "body": "Now, we are ready to combine the ingredients. Drag all of the ingredients that need to go into the shaker for the second step. Hit submit when you are done. ",
+        "choices": [
+          "https://images.squarespace-cdn.com/content/v1/5c3dfd275cfd79131b207c18/1552078168183-RI06ZE4L3M6RHTG5JWWX/Kahlua+500x500.png",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s",
+          "https://static.vecteezy.com/system/resources/thumbnails/011/155/314/small/espresso-with-spoon-isolated-png.png",
+          "https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2018/09/84801-STIRRINGS-SIMPLE-SYRUP.png",
+          "https://t3.ftcdn.net/jpg/05/47/12/28/360_F_547122875_kVX9skGAnGYaqqLHIsL1tffFZGoENekz.jpg",
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://www.muji.com.kw/assets/ProductImages/J-4547315581191/4547315581191_1260.jpg"
+        ],
+        "answers": [
+          "https://images.squarespace-cdn.com/content/v1/5c3dfd275cfd79131b207c18/1552078168183-RI06ZE4L3M6RHTG5JWWX/Kahlua+500x500.png",
+          "https://www.pngall.com/wp-content/uploads/2016/04/Ice-Free-PNG-Image.png",
+          "https://d3czfiwbzom72b.cloudfront.net/wp-content/uploads/2018/09/84801-STIRRINGS-SIMPLE-SYRUP.png",
+          "https://static.vecteezy.com/system/resources/thumbnails/011/155/314/small/espresso-with-spoon-isolated-png.png",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4HFEyqRpsMlbz2yhPmHiaICS96Ic6qItE6XBYF1UV2Q&s"
+        ]
+      },
+      "step3": {
+        "type": "drag",
+        "equipment": "https://drive.google.com/file/d/12OGzWafleTJetXTCqE9So9Jo1Fn1an-t/view?usp=sharing",
+        "body": "Ok, recall we are making an espresso martini. What would you use to garnish the drink after pouring the martini cocktail in the glass? Drag the garnishes to the glass.\n\n",
+        "choices": [
+          "https://www.clickandgrow.com/cdn/shop/products/apple-mint-1280x960_093fa91e-f325-4f84-b6f3-8467a0330ae5.jpg",
+          "https://t4.ftcdn.net/jpg/01/27/30/29/360_F_127302955_vf7GNzissJvIZDnKm6Zjs5ctxJwtqttc.jpg",
+          "https://www.calgiant.com/wp-content/uploads/2021/08/berry-iso-straw-1-878x1024.png",
+          "https://t3.ftcdn.net/jpg/05/47/12/28/360_F_547122875_kVX9skGAnGYaqqLHIsL1tffFZGoENekz.jpg",
+          "https://t3.ftcdn.net/jpg/03/07/21/84/360_F_307218492_JXw5wRQLUQuoLFzO4tanp0DKwPAeCYCM.jpg",
+          "https://countrystore.tabasco.eu/cdn/shop/files/NewProject_684x.jpg?v=1687787020",
+          "https://i5.walmartimages.com/seo/Fresh-Lime-Each_12314833-2e54-4739-94a2-7db45b63109d.16ff07e3c111df9be4158853c2e505ef.jpeg",
+          "https://i.pinimg.com/736x/04/45/c0/0445c0f6dd4475bb5d44d8f2b6883548.jpg",
+          "https://thekmp.com/cdn/shop/products/Domino_Pure_Cane_Sugar_4_LB_4593f55d-41a3-4174-ad16-0c807cbbd10a_800x.png?v=1599242750"
+        ],
+        "answers": [
+          "https://t3.ftcdn.net/jpg/05/47/12/28/360_F_547122875_kVX9skGAnGYaqqLHIsL1tffFZGoENekz.jpg"
+        ]
+      }
+    }
+  }
 }
 
 
