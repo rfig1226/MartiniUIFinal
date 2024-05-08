@@ -2,6 +2,7 @@
   "0": {
     "id": "0",
     "flavor_profile": "classic",
+    "short_descript": "The Classic Martini is known for its elegance and simplicity, combining gin and dry vermouth for a crisp, botanical flavor. Garnished with a lemon twist, it offers a smooth and zesty finish. Ideal if you prefer timeless sophistication.",
     "description": "There’s a timeless elegance to the classic martini, known for its crisp and clear sophistication. To master the art of mixing this iconic cocktail, we will focus on the traditional preparation of the Classic Martini. The process is straightforward, following the same meticulous steps used across martini variations, allowing you to quickly refer to the definitive recipe for this quintessentially smooth, gin-and-vermouth blend.\n",
     "images": [
       "https://assets.bonappetit.com/photos/616730026f14717d799f49a5/1:1/w_2560%2Cc_limit/BA1121tucci01_test.jpg",
@@ -78,6 +79,7 @@
   "1": {
     "id": "1",
     "flavor_profile": "sweet",
+    "short_descript": "The Lemon Drop Martini is a lively blend of vodka, lemon juice, and triple sec. Its tart yet sweet flavor profile, accented by a sugared rim and lemon garnish, makes it perfect for those seeking a refreshing, bright cocktail.",
     "description": "There are endless martini recipes with a sweet flavor profile. To become familiar with crafting recipes and ordering margaritas in the sweet taste group, we will be learning how to make a Lemon Drop Martini. Since most martinis have the same steps, you can also skip straight to the stand-alone recipe for the Lemon Drop Martini.\n",
     "images": [
       "https://sabrinacurrie.com/wp-content/uploads/2022/06/Lavender-Lemon-Drop-Martini-Recipe-22-1200x1200.jpg",
@@ -174,6 +176,7 @@
   "2": {
     "id": "2",
     "flavor_profile": "creamy",
+    "short_descript": "The Espresso Martini delivers a bold mix of vodka, coffee liqueur, and freshly brewed espresso. Topped with coffee beans for aroma, it's an ideal choice if you enjoy a smooth cocktail with a rich coffee flavor.",
     "description": "There's a rich array of martini recipes with a robust, coffee-inspired twist. To explore the art of crafting and enjoying these caffeinated delights, we'll delve into the making of the Espresso Martini. As with many martinis, the preparation steps are quite similar, allowing you to easily jump to the standalone recipe for this velvety, coffee-flavored cocktail.\n",
     "images": [
       "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2FRecipes%2F2021-10-espresso-martini%2F2021-10-12_ATK8093",

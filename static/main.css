@@ -1,4 +1,56 @@
 
+.highlight {
+    color: #284e13; /* Change to whatever color you prefer */
+}
+
+
+/* CSS to enable hover for dropdowns */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Styling for dropdown menus */
+.dropdown-menu {
+    background-color: #f8f9fa;  /* Light gray background for dropdown */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Styling for dropdown items */
+.dropdown-item {
+    color: #333; /* Dark gray text color for readability */
+    padding: 8px 20px; /* Generous padding for easier clicking and readability */
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover, .dropdown-item:focus {
+    background-color: #c9d1c4; /* Bootstrap primary color for highlight */
+    color: #ffffff; /* White text on hover */
+}
+
+/* Styling for dropdown items */
+.dropdown-item {
+    color: #333; /* Dark gray text color for readability */
+    padding: 8px 20px; /* Generous padding for easier clicking and readability */
+    border-bottom: 1px solid #e7e7e7; /* Light gray border for separation */
+}
+
+/* Remove the border from the last dropdown item */
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .navbar-color{
     background-color: #DBE8D4;
 }
@@ -821,3 +873,43 @@ button:disabled {
     max-width: 100%;
     max-height: 100%;
 }
+
+
+/* Container for the image and overlay */
+.flavor-profile-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .flavor-image {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Green overlay */
+  .flavor-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #284e13; /* Green color with some opacity */
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flavor-text {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Show overlay on hover */
+  .flavor-profile-container:hover .flavor-overlay {
+    opacity: 1;
+  }
+  

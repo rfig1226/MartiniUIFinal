@@ -73,9 +73,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link reg-text" href="{{ url_for('start') }}">
-              Learn
-            </a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle reg-text" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Learn
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="/start/1">Lemon Drop Martini</a></li>
+                  <li><a class="dropdown-item" href="/start/0">Classic Martini</a></li>
+                  <li><a class="dropdown-item" href="/start/2">Espresso Martini</a></li>
+              </ul>
+          </div>
             <a
               class="nav-link reg-text"
               href="{{ url_for('recipe_alone_start') }}"
