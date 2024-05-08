@@ -3,7 +3,7 @@ $(document).ready(function () {
     let recipe_data = lessons[recipe_id];
     let image = recipe_data["images"][0];
     let profile = recipe_data["flavor_profile"];
-    let shortDescription = recipe_data["short_descript"]; // Fetch short description
+    let shortDescription = recipe_data["short_descript"];
     profile = profile[0].toUpperCase() + profile.slice(1);
 
     let flavor_column = $(
@@ -19,8 +19,6 @@ $(document).ready(function () {
         </div>
        </div>`
     );
-
-
 
     $(".flavor-profiles").append(flavor_column);
   }

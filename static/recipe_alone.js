@@ -6,7 +6,6 @@ function fetchRecipeData(recipe_id) {
     data: JSON.stringify({ item_id: recipe_id }),
     dataType: "json",
     success: function (response) {
-      // Update page content with the fetched data
       var recipe_data = response.data;
 
       $(".recipe-alone-title").text(

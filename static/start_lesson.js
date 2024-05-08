@@ -1,9 +1,6 @@
 $(document).ready(function () {
-  // Get the recipe_id from the URL
-
   console.log("recipe id: " + recipe_id);
 
-  // Function to fetch recipe data and update page content
   function fetchRecipeData(recipe_id) {
     $.ajax({
       type: "POST",
@@ -11,7 +8,6 @@ $(document).ready(function () {
       contentType: "application/json",
       data: JSON.stringify({ item_id: recipe_id }),
       success: function (response) {
-        // Update page content with the fetched data
         var recipeData = response.data;
         $(".section-title").text(
           "How to Make a " +
@@ -24,7 +20,6 @@ $(document).ready(function () {
         $(".lesson-recipe-name").text(`The ${recipeData.recipe_name}`);
         $(".lesson-recipe-preptime").text(`Prep Time: ${recipeData.prep_time}`);
 
-
         if (recipeData.did_you_know) {
           $("#did-you-know-section").html(
             `<h3>Did You Know?</h3><p>${recipeData.did_you_know}</p>`
@@ -32,8 +27,6 @@ $(document).ready(function () {
         } else {
           $("#did-you-know-section").html("");
         }
-        
-
       },
       error: function (xhr, status, error) {
         console.error("Error fetching recipe data:", error);
@@ -41,10 +34,8 @@ $(document).ready(function () {
     });
   }
 
-  // Call the function to fetch recipe data when the page loads
   fetchRecipeData(recipe_id);
 
-  // Redirect to ingredients page when the button is clicked
   $(".move-to-ingredients-btn").click(function () {
     window.location.href = "/ingredients/" + recipe_id;
   });

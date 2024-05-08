@@ -66,6 +66,7 @@ def recipe_alone_start():
 def recipe_alone(recipe_id):
     return render_template("recipe_alone.html", recipe_id=recipe_id)
 
+
 @app.route("/quiz_alone_start")
 def quiz_alone_start():
     return render_template("quiz_alone_start.html", lessons=lessons)
@@ -99,7 +100,7 @@ def load_recipe():
 
 @app.route("/load_answer_key/<recipe_id>")
 def load_answer_key(recipe_id):
-    answer_key_path = "answer_key.json"  # Adjust the path as needed
+    answer_key_path = "answer_key.json"
     try:
         with open(answer_key_path, "r") as file:
             answer_key_data = json.load(file)

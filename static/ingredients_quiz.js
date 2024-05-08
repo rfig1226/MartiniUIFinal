@@ -1,19 +1,16 @@
 $(document).ready(function () {
-  // Call the function to fetch recipe data when the page loads
   fetchRecipeData(recipe_id);
   let totalCount = 0;
   let matchCount = 0;
 
-  // Function to fetch recipe data and update page content
   function fetchRecipeData(recipe_id) {
     $.ajax({
       type: "POST",
       url: "/load_recipe",
       contentType: "application/json",
       data: JSON.stringify({ item_id: recipe_id }),
-      dataType: "json", // Ensure you're expecting a JSON response
+      dataType: "json",
       success: function (response) {
-        // Update page content with the fetched data
         var recipeData = response.data;
         updatePage(recipeData);
       },
@@ -28,7 +25,6 @@ $(document).ready(function () {
     $(".measurements").empty();
     $(".ingredient-target").empty();
 
-    // Add ingredients to the list
     $.each(recipeData.ingredients, function (key, value) {
       if ("amount" in value) {
         let measurement = $(
@@ -46,9 +42,8 @@ $(document).ready(function () {
     $(".drag-measurement").draggable({
       revert: "invalid",
       start: function (event, ui) {
-        // Changes the color when the drag starts
         $(this).css({
-          "background-color": "#284e13", // Example: a light green color
+          "background-color": "#284e13",
           color: "white",
         });
       },
@@ -66,17 +61,14 @@ $(document).ready(function () {
         draggable.css("background-color", "#314D1C");
         draggable.css("color", "white");
 
-        // Append the draggable to the droppable
         draggable.appendTo(droppable).css({
           top: 0,
           left: 0,
-          width: "100%", // Match the width of droppable
-          height: "100%", // Match the height of droppable
+          width: "100%",
+          height: "100%",
         });
 
         ui.draggable.draggable("disable");
-
-        // Check if the values are the same
 
         let isCorrect =
           draggableText === recipeData.ingredients[droppableText].amount;
@@ -95,30 +87,27 @@ $(document).ready(function () {
           $(".drag-measurement.dropped").length ===
           $(".drag-measurement").length;
 
-        // If all draggables are dropped, enable the submit button
         $("#submit-quiz").prop("disabled", !allDropped);
       },
     });
   }
 
   function resetQuiz() {
-    // Reset the draggable elements to their original container and style
     $(".drag-measurement").each(function () {
       $(this)
-        .appendTo(".measurements") // Assuming ".measurements" is their original container
+        .appendTo(".measurements")
         .css({
           "background-color": "#DCE9D5",
           color: "#284e13",
-          width: "", // Reset width, if changed
-          height: "", // Reset height, if changed
-          top: "", // Reset top position, if changed
-          left: "", // Reset left position, if changed
+          width: "",
+          height: "",
+          top: "",
+          left: "",
         })
         .removeClass("dropped")
         .draggable("enable");
     });
 
-    // reset any counters or results displayed
     $(".ing-quiz-results").empty();
     matchCount = 0;
     totalCount = 0;
