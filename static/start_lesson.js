@@ -23,6 +23,17 @@ $(document).ready(function () {
         $("#lesson-image").attr("src", recipeData["images"][0]);
         $(".lesson-recipe-name").text(`The ${recipeData.recipe_name}`);
         $(".lesson-recipe-preptime").text(`Prep Time: ${recipeData.prep_time}`);
+
+
+        if (recipeData.did_you_know) {
+          $("#did-you-know-section").html(
+            `<h3>Did You Know?</h3><p>${recipeData.did_you_know}</p>`
+          );
+        } else {
+          $("#did-you-know-section").html("");
+        }
+        
+
       },
       error: function (xhr, status, error) {
         console.error("Error fetching recipe data:", error);

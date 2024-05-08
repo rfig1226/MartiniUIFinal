@@ -913,3 +913,28 @@ button:disabled {
     opacity: 1;
   }
   
+
+  #did-you-know-section {
+    background-color: #2d6a0d; /* Blue background color */
+    font-family: 'Montserrat', serif;
+    color: black; /* White heading */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px; /* Space around the content */
+    margin-top: 20px; /* Space above the box */
+    width: 86%; /* Full width of the containing image div */
+    margin-left: 25px;
+  }
+  
+  #did-you-know-section h3 {
+    color: white; /* White heading */
+    font-family: 'Montserrat', serif;
+    font-size: 1.4em; /* Larger font size */
+    margin-bottom: 10px; /* Space between heading and content */
+    font-weight:bold;
+  }
+  
+  #did-you-know-section p {
+    font-size: 1.1em; /* Adjust paragraph font size */
+    margin: 0; /* Remove additional margins */
+  }
+  
