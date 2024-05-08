@@ -1,0 +1,25 @@
+{% extends "layout.html" %} {% block content %}
+
+    <script
+            type="text/javascript"
+            src="{{ url_for('static', filename = 'quiz_alone_start.js') }}"
+    ></script>
+
+    <script>
+        let lessons = {{lessons|tojson}}
+    </script>
+
+    <div class="container">
+        <div class="section-title recipe-start-header">Martini Quizzes</div>
+        <div class="recipe-start-desc">
+            If you completed the lessons already, please refer to the stand-alone
+            quizzes below so you can prove you've mastered the art of martinis! If you have not
+            completed the lessons, please visit the
+            <a href="{{ url_for('start') }}" class="learning-module-link"
+            >learning module</a
+            >.
+        </div>
+        <div class="row recipe-options-container"></div>
+    </div>
+
+{% endblock %}
