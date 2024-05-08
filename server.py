@@ -66,6 +66,10 @@ def recipe_alone_start():
 def recipe_alone(recipe_id):
     return render_template("recipe_alone.html", recipe_id=recipe_id)
 
+@app.route("/quiz_alone_start")
+def quiz_alone_start():
+    return render_template("quiz_alone_start.html", lessons=lessons)
+
 
 # AJAX FUNCTIONS
 

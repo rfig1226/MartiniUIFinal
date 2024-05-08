@@ -73,7 +73,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <!-- Need href for where we want these to take the user -->
             <a class="nav-link reg-text" href="{{ url_for('start') }}">
               Learn
             </a>
@@ -83,7 +82,7 @@
             >
               Recipes
             </a>
-            <a class="nav-link reg-text"> Quiz </a>
+            <a class="nav-link reg-text" href="{{ url_for('quiz_alone_start') }}"> Quiz </a>
           </div>
         </div>
       </div>
