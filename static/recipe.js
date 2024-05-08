@@ -65,71 +65,53 @@ function createSteps(recipe_data) {
   }
 }
 
+function nextStepHandler() {
+  var currentActive = $(".step-item.active");
+  var nextStep = currentActive.next(".step-item");
+
+  if (nextStep.length) {
+    currentActive.removeClass("active");
+    nextStep.addClass("active");
+    updateNavigationButtons();
+  }
+}
+
+function prevStepHandler() {
+  var currentActive = $(".step-item.active");
+  var prevStep = currentActive.prev(".step-item");
+
+  if (prevStep.length) {
+    currentActive.removeClass("active");
+    prevStep.addClass("active");
+    updateNavigationButtons();
+  }
+}
+
+function updateNavigationButtons() {
+  var currentActive = $(".step-item.active");
+  var isFirst = currentActive.is(":first-child");
+  var isLast = currentActive.is(":last-child");
+
+  $("#prev-step-btn").prop("disabled", isFirst);
+  $("#next-step-btn").prop("disabled", isLast);
+
+  if (isLast) {
+    $("#next-step-btn");
+    $("#next-step-btn")
+      .text("Test Your Knowledge")
+      .prop("disabled", false)
+      .off("click")
+      .click(function () {
+        window.location.href = "/recipe_quiz/" + recipe_id;
+      });
+  } else {
+    $("#next-step-btn").text("Next Step").off("click").click(nextStepHandler);
+  }
+}
+
 $(document).ready(function () {
   fetchRecipeData(recipe_id);
 
-  $("#next-step-btn").click(function () {
-    var currentActive = $(".step-item.active");
-    var nextStep = currentActive.next(".step-item");
-
-    // if more steps
-    if (nextStep.length) {
-      currentActive.removeClass("active");
-      nextStep.addClass("active");
-      $("#prev-step-btn").prop("disabled", false);
-    }
-
-    // if on last step
-    if (!nextStep.next(".step-item").length) {
-      $(this).text("Test Your Knowledge");
-      $(this)
-        .off("click")
-        .click(function () {
-          window.location.href = "/recipe_quiz/" + recipe_id;
-        });
-    } else {
-      $(this).text("Next Step");
-      $(this).off("click").click(nextStepHandler);
-    }
-  });
-
-  $("#prev-step-btn").click(function () {
-    var currentActive = $(".step-item.active");
-    var prevStep = currentActive.prev(".step-item");
-
-    if (prevStep.length) {
-      currentActive.removeClass("active");
-      prevStep.addClass("active");
-      $("#next-step-btn").text("Next Step");
-      $("#next-step-btn").off("click").click(nextStepHandler);
-      $("#next-step-btn").prop("disabled", false);
-    }
-
-    if (prevStep.is(":first-child")) {
-      $("#prev-step-btn").prop("disabled", true);
-    }
-  });
-
-  function nextStepHandler() {
-    var currentActive = $(".step-item.active");
-    var nextStep = currentActive.next(".step-item");
-
-    if (nextStep.length) {
-      currentActive.removeClass("active");
-      nextStep.addClass("active");
-      $("#prev-step-btn").prop("disabled", false);
-    }
-
-    if (!nextStep.next(".step-item").length) {
-      // last step
-      $(this).text("Test Your Knowledge");
-      $(this)
-        .off("click")
-        .click(function () {
-          window.location.href = "/recipe_quiz/" + recipe_id;
-        });
-    }
-  }
-
   $("#next-step-btn").click(nextStepHandler);
+  $("#prev-step-btn").click(prevStepHandler);
 });
