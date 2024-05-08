@@ -43,9 +43,9 @@
       "step1": {
         "step_title": "Step 1: Chill Martini Glasses",
         "step_details": [
-          "Chill martini glasses in freezer for at least 10 minutes prior to serving."
+          "Chill martini glass by either leaving the glass in the freezer for at least 10 minutes prior to serving or by filling the glass with ice and water, letting sit for 2-3 minutes, and dumping out the ice and water."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/chillmartglass.gif"
       },
       "step2": {
         "step_title": "Step 2: Mix Ingredients",
@@ -53,7 +53,7 @@
           "Fill your shaker ½ of the way with ice.",
           "Add the gin and dry vermouth into a mixing glass with ice"
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/classmart2.gif"
       },
       "step3": {
         "step_title": "Step 3: Stir!",
@@ -63,7 +63,7 @@
           "Continue stirring until the outside of the mixing glass feels cold to the touch.",
           "Once adequately stirred, separate the spoon from the glass and prepare to strain the cocktail into a chilled martini glass."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/classmart3.gif"
       },
       "step4": {
         "step_title": "Step 4: Serve",
@@ -71,7 +71,7 @@
           "Strain the martini and pour into the glass (might require extra strainer tool if using a Boston shaker).",
           "Garnish your glass with your lemon twist!"
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/classmart4.gif"
       }
     }
   },
@@ -129,11 +129,11 @@
     },
     "steps": {
       "step1": {
-        "step_title": "Step 1: Chill Martini Glasses",
+        "step_title": "Step 1: Chill Martini Glass",
         "step_details": [
-          "Chill martini glasses in freezer for at least 10 minutes prior to serving."
+          "Chill martini glass by either leaving the glass in the freezer for at least 10 minutes prior to serving or by filling the glass with ice and water, letting sit for 2-3 minutes, and dumping out the ice and water."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/chillmartglass.gif"
       },
       "step2": {
         "step_title": "Step 2: Mix Ingredients",
@@ -142,7 +142,7 @@
           "Pour the vodka, triple sec, lemon juice and sugar into the cocktail shaker.",
           "Close the shaker either with a lid or smaller tin."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/lemondrop2.gif"
       },
       "step3": {
         "step_title": "Step 3: Shake!",
@@ -151,15 +151,23 @@
           "Shake in a circular motion until the shaker produces condensation.",
           "Separate the two shaking units once done."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/shake.gif"
       },
       "step4": {
-        "step_title": "Step 4: Serve",
+        "step_title": "Step 4: Rim Glass",
         "step_details": [
-          "Run the lemon twist around the edge of the chilled martini glass and dunk in a small amount of sugar for a coated rim.",
-          "Strain the martini and pour into the glass (might require extra strainer tool if using a Boston shaker)."
+          "Run the lemon twist around the edge of the chilled martini glass.",
+          "Slowly turn the glass in a small amount of sugar for a coated rim."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/lemondrop3.gif"
+      },
+      "step5": {
+        "step_title": "Step 5: Serve",
+        "step_details": [
+          "Strain the martini and pour into the glass (might require extra strainer tool if using a Boston shaker).",
+          "Garnish with a lemon twist!"
+        ],
+        "step_video": "../static/images/lemondrop4.gif"
       }
     }
   },
@@ -222,7 +230,7 @@
         "step_details": [
           "Brew the coffee then pour into a bowl to cool quickly."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/espresso1.gif"
       },
       "step2": {
         "step_title": "Step 2: Mix Ingredients",
@@ -232,7 +240,7 @@
           "Next, add the coffee liqueur.",
           "Close the shaker either with a lid or smaller tin."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/espresso2.gif"
       },
       "step3": {
         "step_title": "Step 3: Shake!",
@@ -241,7 +249,7 @@
           "Shake in a circular motion until the shaker produces condensation.",
           "Separate the two shaking units once done."
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/shake.gif"
       },
       "step4": {
         "step_title": "Step 4: Serve",
@@ -249,7 +257,7 @@
           "Strain the martini and pour into the glass (might require extra strainer tool if using a Boston shaker).",
           "Finish off with the coffee beans garnish!"
         ],
-        "step_video": "video placeholder"
+        "step_video": "../static/images/espresso4.gif"
       }
     }
   }

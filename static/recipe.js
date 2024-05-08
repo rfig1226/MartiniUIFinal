@@ -36,7 +36,7 @@ function createSteps(recipe_data) {
     let step_element = $(`<div class="step-item" id="${step}">
             <div class="step-title">${step_title}</div>
             <div class="step-video-container">
-                <div class="step-video">${step_video}</div>
+                <div class="step-video"><img src="${step_video}" alt="${step}"></div>
             </div>
             <div class="sub-steps" id="sub-${step}"></div>
             </div>`);
